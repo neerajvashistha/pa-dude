@@ -10,4 +10,4 @@
 8.  Messages come in the form of MMS.
 9.  Android Kernel Study
 10. XMPP
-11. 
+11. Designing Whatsapp and facebook listener
