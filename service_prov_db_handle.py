@@ -6,9 +6,9 @@ from pymongo import MongoClient
 
 def main():
 	load_JSON_into_Collection("services.json","service_type")
-	
+
 	#loc_serv_list = queryServNameLocation(qryd_serv_prvd_list,"Khadi Machine")
-	
+
 	#print(loc_serv_list)
 
 	dropCollection("services")
@@ -31,7 +31,7 @@ def load_JSON_into_Collection(filename,JSONobj):
 			collection.insert(item)
 	except Exception as e:
 		print("Error has occurred", e)
-	
+
 
 
 
@@ -51,11 +51,11 @@ def queryServName(JSONobj_key1,JSONobj_key2):
 		alist = []
 		for document in cursor:
 			alist = document.get(JSONobj_key1)[0].get("serv_prvd")
-			
-		return alist 
+
+		return alist
 	except Exception as e:
 		print("Error has occurred", e)
-	
+
 
 def queryServNameLocation(alist, location):
 	'''
@@ -74,7 +74,7 @@ def queryServNameLocation(alist, location):
 				if v == location.lower():
 					loc_serv_list.append(i)
 
-				
+
 		if len(loc_serv_list) == 0:
 			return alist
 
@@ -86,13 +86,13 @@ def queryCollection(itemList,query):
 	'''
 	param @itemList, item could be any item decribed in serv_decrp like manchurian, or monitor or chinese
 
-	return serv_prvd_list, which could be a list of servie providers, or menu list 
+	return serv_prvd_list, which could be a list of servie providers, or menu list
 	'''
 	serv_prvd_list = []
 	if len(itemList) !=0:
 		for item in itemList:
 			#fetch values from serv_decrp.py for an inquired <item>.
-			boolItemExist,servItem,servDecrp = serv_decrp.match_serv_menu(item) 
+			boolItemExist,servItem,servDecrp = serv_decrp.match_serv_menu(item)
 			#boolItemExist,servItem,servDecrp could be <true/false>,<food>,<chinese> or<true/false>,<chinese>,<menulist> or none.
 			if (boolItemExist is True):
 				if isinstance(servDecrp, basestring):
@@ -113,17 +113,17 @@ def dropCollection(col_name):
 	drops collection
 	'''
 	try:
-		db.drop_collection(col_name)			
+		db.drop_collection(col_name)
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://192.168.100.6:27027")
+client = MongoClient("mongodb://192.168.0.6:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://192.168.100.6:27027")
+	client = MongoClient("mongodb://192.168.0.6:27027")
 	db = client.test
 	main()
 	db.close
