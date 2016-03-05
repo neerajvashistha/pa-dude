@@ -117,13 +117,13 @@ def dropCollection(col_name):
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://192.168.0.6:27027")
+client = MongoClient("mongodb://192.168.100.6:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://192.168.0.6:27027")
+	client = MongoClient("mongodb://192.168.100.6:27027")
 	db = client.test
 	main()
 	db.close

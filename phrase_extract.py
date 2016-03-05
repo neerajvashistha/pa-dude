@@ -22,4 +22,4 @@ def extract_phrase(sentence):
 	return phraseList
 
 if __name__ == "__main__":
-	print(extract_phrase("hi how are you?"))
+	print(extract_phrase("8237420139"))

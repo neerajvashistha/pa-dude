@@ -37,9 +37,9 @@ def handle(msg):
                 xs = command.strip()
                 if xs.isdigit() and len(str(xs))==10:
                     number = str(xs)
-            else:
-                xs = command
-                bot.sendMessage(chat_id,"please clarify your need.")
+                else:
+                    xs = command
+                    bot.sendMessage(chat_id,"please clarify your need.")
 
             if len(phrase_extract.extract_phrase(command))!=0:
                 if service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command)[0] == "Did you mean":
@@ -48,10 +48,10 @@ def handle(msg):
                 #while location_area=="":#
                 #    bot.sendMessage(chat_id,"Provide us your location")
                 bot.sendMessage(chat_id,"Provide us your phone no, shortly we will be sending an OTP for verifying your identity")
-                if len(number)!=0:
-                    phn_number = number
-                    otp_sms.get_otp(phn_number,chat_id)
-                    bot.sendMessage(chat_id, 'Please type "/otp" and enter the OTP you have recieved.')
+            if len(number)!=0:
+                phn_number = number
+                otp_sms.get_otp(phn_number,chat_id)
+                bot.sendMessage(chat_id, 'Please type "/otp" and enter the OTP you have recieved.')
         elif command == re.match(r'/otp (\S+)', command).group() and is_chatting:
             print "got it"
             if otp_sms.valid_otp(int(re.match(r'/otp (\S+)', command).group(1)),chat_id) is True:
