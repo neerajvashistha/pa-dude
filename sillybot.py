@@ -41,3 +41,4 @@ while True:
         bot_response=kernel.respond(message, sessionId)
         # Do something with bot_response
         print "ROBOT> ",bot_response
+        
