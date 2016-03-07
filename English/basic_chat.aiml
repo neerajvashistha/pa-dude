@@ -1,0 +1,17 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         That is interesting, you have such pretty name,  <set name="name"><star/></set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>WHAT IS MY NAME</pattern>
+      <template>
+         Your name is <get name="name"/>.
+      </template>  
+   </category>  
+
+</aiml>
