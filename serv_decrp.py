@@ -88,12 +88,14 @@ services = {
 
 def match_serv_menu(itemName):
 	some_list=["no value"]
+	index=0
 	for service_type_key,service_descp_values in services.items(): #food,chinese
 		for service_descp_key,service_descp_menu in service_descp_values.items(): #chinese,[]
 			if itemName in service_descp_key:
-				return (True,service_descp_key,service_descp_menu)
+				index =0
+				return (True,service_descp_key,service_descp_menu,index)
 			if itemName in service_descp_menu:
-				return (True,service_type_key,service_descp_key)
-	return (False,some_list,some_list)
+				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemName)+1))
+	return (False,some_list,some_list,index)
 
-#print(match_serv_menu("chinese"))
+#print(match_serv_menu("computer"))

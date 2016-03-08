@@ -15,6 +15,7 @@ number=""
 def handle(msg):
     content_type,chat_type,chat_id = telepot.glance(msg)
     #print content_type, chat_type, chat_id
+
     if content_type is 'text':
         global is_chatting
         number=""
@@ -42,9 +43,9 @@ def handle(msg):
                     bot.sendMessage(chat_id,"please clarify your need.")
 
             if len(phrase_extract.extract_phrase(command))!=0:
-                if service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command)[0] == "Did you mean":
-                    bot.sendMessage(chat_id, service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command))
-                print service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command)
+                if service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command,location_area)[0] == "Did you mean":
+                    bot.sendMessage(chat_id, service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command,location_area))
+                print service_prov_db_handle.queryCollection(phrase_extract.extract_phrase(command),command,location_area)
                 #while location_area=="":#
                 #    bot.sendMessage(chat_id,"Provide us your location")
                 bot.sendMessage(chat_id,"Provide us your phone no, shortly we will be sending an OTP for verifying your identity")
