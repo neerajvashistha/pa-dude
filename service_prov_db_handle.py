@@ -3,6 +3,7 @@ import pymongo
 import serv_decrp
 import phrase_extract
 from pymongo import MongoClient
+import re
 
 def main():
 	load_JSON_into_Collection("services.json","service_type")
@@ -11,10 +12,32 @@ def main():
 
 	#print(loc_serv_list)
 	#alist1 = queryServName("food","chinese")
-	alist = ["manchurian"]
-	print(queryCollection(alist,"i want manchurian",""))
+	phraseExtracted = someFunctoFetchValue("phraseExtracted")
+	print phraseExtracted
+	command="I want Manchurian"
+	loc_area="katra"
+	print(queryCollection(phraseExtracted,command,loc_area))
+	intrmList = queryCollection(phraseExtracted,command,loc_area)
+	strop = ""
+	for i in range(len(intrmList)):
+		for k,v in intrmList[i].items():
+			strop += str(k)+ " : "+str(v) +"\n"
+	print strop
 	dropCollection("services")
 
+def someFunctoFetchValue(key):
+	import re
+	hand = open('filename.txt')
+	for line in hand:
+	    line = line.rstrip()
+	    #print line
+	    if re.search(key, line) :
+	    	#print type(line)
+	    	if isinstance(line, basestring):
+	    		return phrase_extract.extract_phrase(line)
+	    	if isinstance(line, list):
+	    		l = re.findall(':\S+', line)
+	    		return re.findall('[a-zA-Z0-9]\S*[a-zA-Z0-9]',str(l))[0]
 
 def load_JSON_into_Collection(filename,JSONobj):
 	'''
@@ -151,13 +174,13 @@ def dropCollection(col_name):
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://192.168.0.7:27027")
+client = MongoClient("mongodb://192.168.100.5:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://192.168.0.7:27027")
+	client = MongoClient("mongodb://192.168.100.5:27027")
 	db = client.test
 	main()
 	db.close

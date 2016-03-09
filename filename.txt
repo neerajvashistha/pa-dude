@@ -1,0 +1,24 @@
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+loc_area:katraj
