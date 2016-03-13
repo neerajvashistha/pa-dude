@@ -1,12 +1,7 @@
 import re, collections
-#import enchant
 import sys
-sys.path.append('pyenchant-1.6.6/enchant/checker')
-#sys.path.append('enchant/checker')
-print sys.path
-from __init__ import SpellChecker
-
-#from enchant.checker import SpellChecker
+from bitmap  import Bitmap
+from hashlib import md5
 
 def words(text):
     return re.findall('[a-z]+', text.lower())
@@ -43,15 +38,41 @@ def correct_top(word, n):
     s = sorted(candidates, key=NWORDS.get, reverse=True)
     return s[0], s[:n]
 
+def makeHashes(word) :
+    # convert 32 hexdigits to list of 6 hash keys
+    hex32 = md5(word).hexdigest()
+    hashes = []
+    for i in range(0,30,5) :
+        hashes.append(int(hex32[i:i+5],16))
+    return hashes
+
+def loadBitmap(file) :
+    # generate bitmap from lexicon file (one word per line)
+    words = open(file).readlines()
+    words = map(lambda x: x.strip(), words) # no newlines please
+    bmap  = Bitmap(2**20)
+    for word in words :
+        hashes = makeHashes(word)
+        for hash in hashes :
+            bmap.setBit(hash)
+    return bmap
+
+bmap  = loadBitmap("corpus.txt")
+
+def checkWord(bmap, word) :
+    # return True if word in lexicon
+    hashes = makeHashes(word)
+    for hash in hashes :
+        if not bmap.getBit(hash): return False
+    return True
+
 def sentence_correct(sentence):
+
     wordlist = sentence.split()
     correctSentenceList = []
     for word in wordlist:
-        chkr = SpellChecker('en_US')
-        chkr.set_text(word)
-        for err in chkr:
-            word = correct(err.word)
-        #print word
+        if checkWord(bmap,word) is False:
+            word = correct(word)
         correctSentenceList.append(word)
     #print correctSentenceList
     correctSentence = ' '.join(correctSentenceList)
@@ -59,4 +80,4 @@ def sentence_correct(sentence):
 
 
 if __name__ == "__main__":
-    print(sentence_correct("I would like to order mancurian"))
+    print(sentence_correct("I wuld lik to ordr manchrian"))
