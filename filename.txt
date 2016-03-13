@@ -31,3 +31,6 @@ loc_area:katraj
 phraseExtracted:[u'march ran']
 command:I want manchu rian
 loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want manchurian
+loc_area:katraj

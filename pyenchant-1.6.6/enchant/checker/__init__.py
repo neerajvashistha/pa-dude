@@ -51,10 +51,14 @@ import sys
 sys.path.append('pyenchant-1.6.6/enchant')
 sys.path.append('pyenchant-1.6.6/enchant/tokenize')
 #import enchant
+#from enchant import
+from _enchant import *
+from __init__ import *
 from errors import *
-from __init__ import get_tokenizer
+from toqen import get_tokenizer
 from utils import bytes, unicode, basestring, next
 from utils import get_default_language
+#print sys.path
 
 
 class SpellChecker:
@@ -130,6 +134,7 @@ class SpellChecker:
         if lang is None:
             lang = get_default_language()
         if isinstance(lang,basestring):
+            #dict = enchant.Dict(lang)
             dict = enchant.Dict(lang)
         else:
             dict = lang
