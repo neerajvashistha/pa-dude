@@ -22,3 +22,12 @@ loc_area:katraj
 phraseExtracted:[u'manchurian']
 command:I want Manchurian
 loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I would like to have manchurian
+loc_area:katraj
+phraseExtracted:[u'fried rice']
+command:I want fried rice
+loc_area:katraj
+phraseExtracted:[u'march ran']
+command:I want manchu rian
+loc_area:katraj
