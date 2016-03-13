@@ -12,7 +12,7 @@ import pickle
 
 is_chatting = False
 location_area=False
-number=False
+#number=False
 
 @with_goto
 def handle(msg):
@@ -64,7 +64,7 @@ def handle(msg):
                 command=someFunctoFetchValue("command")
                 loc_area=someFunctoFetchValue("loc_area")
                 print phraseExtracted,command,loc_area
-                
+
                 intrmList = db_handle.queryCollection(phraseExtracted,command,loc_area)
                 strop = ""
                 for i in range(len(intrmList)):
@@ -75,8 +75,8 @@ def handle(msg):
             if len(number)!=0:
                 phn_number = number
                 otp_sms.get_otp(phn_number,chat_id)
-                bot.sendMessage(chat_id, 'Please type "/otp" and enter the OTP you have recieved.')
-            
+                bot.sendMessage(chat_id, 'Please type "/otp" and enter the 6-digit OTP you have recieved. For e.g. /otp 123456')
+
         elif command == re.match(r'/otp (\S+)', command).group() and is_chatting:
             print "got it"
             if otp_sms.valid_otp(int(re.match(r'/otp (\S+)', command).group(1)),chat_id) is True:
@@ -106,7 +106,7 @@ def handle(msg):
 def someFunctoStoreValue(somevalue,key):
     valueToFile = str(key)+":"+str(somevalue)+"\n"
     f = open("filename.txt", 'a')
-    f.write(valueToFile) 
+    f.write(valueToFile)
     f.close()
 def someFunctoFetchValue(key):
     lis = []
