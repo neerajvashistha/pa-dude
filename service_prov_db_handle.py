@@ -4,6 +4,7 @@ import serv_decrp
 import phrase_extract
 from pymongo import MongoClient
 import re
+import numpy as np
 
 def main():
 	load_JSON_into_Collection("services.json","service_type")
@@ -116,12 +117,14 @@ def queryServNameLocation(alist, location,index):
 					#print key," : ", value
 
 			#print priceList
-			lowPri = min(priceList)
+			lowPri = np.min(a[np.nonzero(priceList)])
 			
 			for i in range(len(loc_serv_list)):
 				for key,value in loc_serv_list[i].items():
 					if key == "price" and value == lowPri:
 						blist.append(loc_serv_list[i])
+					
+
 			return blist
 		if len(loc_serv_list) == 0:
 			for i in alist:
