@@ -87,7 +87,7 @@ def queryServName(JSONobj_key1,JSONobj_key2):
 		print("Error has occurred", e)
 
 
-def queryServNameLocation(alist, location,index): 
+def queryServNameLocation(alist, location,index):
 	'''
 	param @alist, a list with refined vendors/service providers with name, phone, loc
 	param @location, str with location
@@ -113,10 +113,11 @@ def queryServNameLocation(alist, location,index):
 						price = value[index]
 						priceList.append(price)
 						loc_serv_list[i].pop('menuprice')
-				loc_serv_list[i]['price'] = price 
+				loc_serv_list[i]['price'] = price
 					#print key," : ", value
 
 			#print priceList
+
 			lowPri = np.min(a[np.nonzero(priceList)])
 			
 			for i in range(len(loc_serv_list)):
@@ -177,13 +178,13 @@ def dropCollection(col_name):
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://192.168.100.5:27027")
+client = MongoClient("mongodb://akhilari7.ddns.net:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://192.168.100.5:27027")
+	client = MongoClient("mongodb://akhilari7.ddns.net:27027")
 	db = client.test
 	main()
 	db.close

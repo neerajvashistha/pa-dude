@@ -1,6 +1,12 @@
 import re, collections
-import enchant
-from enchant.checker import SpellChecker
+#import enchant
+import sys
+sys.path.append('pyenchant-1.6.6/enchant/checker')
+#sys.path.append('enchant/checker')
+print sys.path
+from __init__ import SpellChecker
+
+#from enchant.checker import SpellChecker
 
 def words(text):
     return re.findall('[a-z]+', text.lower())
@@ -25,7 +31,7 @@ def edits1(word):
 def known_edits2(word):
     return set(e2 for e1 in edits1(word) for e2 in edits1(e1) if e2 in NWORDS)
 
-def known(words): 
+def known(words):
     return set(w for w in words if w in NWORDS)
 
 def correct(word):
