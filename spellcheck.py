@@ -1,11 +1,12 @@
 import re, collections
 #import enchant
 import sys
-#sys.path.append('pyenchant-1.6.6/enchant')
 sys.path.append('pyenchant-1.6.6/enchant/checker')
+#sys.path.append('enchant/checker')
+print sys.path
+from __init__ import SpellChecker
 
-
-from enchant.checker import SpellChecker
+#from enchant.checker import SpellChecker
 
 def words(text):
     return re.findall('[a-z]+', text.lower())
