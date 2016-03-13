@@ -1,7 +1,8 @@
 import re, collections
-import enchant
+#import enchant
 import sys
-#sys.path.append('pyenchant-1.6.6/enchant')
+sys.path.append('pyenchant-1.6.6/enchant')
+sys.path.append('pyenchant-1.6.6/enchant/checker/')
 from enchant.checker import SpellChecker
 
 def words(text):
