@@ -103,8 +103,8 @@ def match_serv_menu(itemName):
 				index =0
 				return (True,service_descp_key,service_descp_menu,index)
 			if itemNam in service_descp_menu:
-				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemNam)+1))
+				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemNam)))
 	return (False,some_list,some_list,index)
 
 
-#print(match_serv_menu("gas"))
+print(match_serv_menu("noodles"))

@@ -31,3 +31,17 @@ command:i want muchurian and butter chicken
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'rice']
+command:i want rice
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+phraseExtracted:[u'rice']
+command:i want rice
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+phraseExtracted:[u'rice']
+command:i want rice
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139

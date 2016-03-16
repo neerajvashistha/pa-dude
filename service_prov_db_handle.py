@@ -5,7 +5,7 @@ import phrase_extract
 from pymongo import MongoClient
 import re
 import numpy as np
-import ast 
+import ast,math
 from collections import defaultdict
 
 def main():
@@ -132,6 +132,9 @@ def queryServNameLocation(alist, location,index_dict):
 				#print typz
 				if typz in priceList[i].values():
 					price = priceList[i].get("price")
+					if price is u"-999":
+						priceList[i]['price']="Req"
+						blist.append(priceList[i])
 					if price<lowPri and temp == typz:
 						lowPri = price
 						blist.append(priceList[i])
@@ -141,8 +144,8 @@ def queryServNameLocation(alist, location,index_dict):
 			for i in range(len(blist)):
 				blist[i].pop("serv_type")
 
-			return blist
-		if len(uniloc_serv_list) == 0:
+			
+		if len(uniloc_serv_list) == 0 or len(blist) == 0:
 			someLst = []
 			for i in alist:
 				someLst.append(str(i))# as unique() takes list have strings form dict only 
@@ -154,7 +157,7 @@ def queryServNameLocation(alist, location,index_dict):
 						if value == serv_ty:
 							priceList.append(lowFucn(uniqueList[i],index))
 
-			#print priceList
+			#print "hi",priceList
 			temp = priceList[0].get("serv_type")	
 			#print temp
 			lowPri = 9999				
@@ -163,6 +166,9 @@ def queryServNameLocation(alist, location,index_dict):
 				#print typz
 				if typz in priceList[i].values():
 					price = priceList[i].get("price")
+					if price is u"-999":
+						priceList[i]['price']="Req"
+						blist.append(priceList[i])
 					if price<lowPri and temp == typz:
 						lowPri = price
 						blist.append(priceList[i])
@@ -171,8 +177,10 @@ def queryServNameLocation(alist, location,index_dict):
 					temp = typz
 			for i in range(len(blist)):
 				blist[i].pop("serv_type")
+		if len(blist)==0:
+			blist = ["Item/Service not avail"]
 
-			return blist
+		return blist
 
 	#return loc_serv_list
 	except Exception as e:
@@ -184,7 +192,10 @@ def lowFucn(adict,alist):
 		if key =="menuprice":
 			#print value[alist[0]]
 			for i in range(len(alist)):
-				price+=value[alist[i]]
+				if value[alist[i]]!=0:
+					price+=value[alist[i]]
+				else:
+					price = u"-999"
 			adict.pop("menuprice")
 			adict['price'] = price
 	return adict

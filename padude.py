@@ -48,7 +48,7 @@ def handle(msg):
                     xs = command
                     bot.sendMessage(chat_id,"please clarify your need.")
             if not location_area:
-                #location_area = True
+                print(location_area)
                 bot.sendMessage(chat_id,"Provide us with your location")
                 label .loction_acc
                 phraseExtracted=someFunctoFetchValue("phraseExtracted",chat_id)
@@ -59,7 +59,12 @@ def handle(msg):
                 if db_handle.queryCollection(phraseExtracted,command,loc_area)[0] == "Did you mean":
                     bot.sendMessage(chat_id, db_handle.queryCollection(phraseExtracted,command,loc_area))
                 print db_handle.queryCollection(phraseExtracted,command,loc_area)
-
+                if db_handle.queryCollection(phraseExtracted,command,loc_area)[0] == "Item/Service not avail":
+                    bot.sendMessage(chat_id, "Sorry, Item/Service is not availiable")
+                    os.remove(str(chat_id)+".txt")
+                    goto .exit
+                    print "exiting chat error service NA"
+                    
                 bot.sendMessage(chat_id,"Provide us your phone no, shortly we will be sending an OTP for verifying your identity")
                 goto .exit
                 label .dispResult
@@ -91,6 +96,7 @@ def handle(msg):
                 otp_sms.get_otp(phn_number,chat_id)
                 bot.sendMessage(chat_id, 'Please type "/otp" and enter the 6-digit OTP you have recieved. For e.g. /otp 123456')
                 label .exit
+                
         elif command == re.match(r'/otp (\S+)', command).group() and is_chatting:
             print "got it"
             if otp_sms.valid_otp(int(re.match(r'/otp (\S+)', command).group(1)),chat_id) is True:
