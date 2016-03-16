@@ -57,7 +57,7 @@ def loadBitmap(file) :
             bmap.setBit(hash)
     return bmap
 
-bmap  = loadBitmap("corpus.txt")
+bmap  = loadBitmap("spell.words")
 
 def checkWord(bmap, word) :
     # return True if word in lexicon

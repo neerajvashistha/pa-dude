@@ -87,15 +87,24 @@ services = {
   		}
 
 def match_serv_menu(itemName):
+	import re
+	itemNam =""
 	some_list=["no value"]
 	index=0
 	for service_type_key,service_descp_values in services.items(): #food,chinese
 		for service_descp_key,service_descp_menu in service_descp_values.items(): #chinese,[]
-			if itemName in service_descp_key:
+			new_list = [x for x in service_descp_menu if re.search(unicode(itemName, 'utf-8'), unicode(x, 'utf-8'))]
+			for item in new_list:
+				itemNam =  item
+	#print itemNam
+	for service_type_key,service_descp_values in services.items(): #food,chinese
+		for service_descp_key,service_descp_menu in service_descp_values.items(): #chinese,[]
+			if itemNam in service_descp_key:
 				index =0
 				return (True,service_descp_key,service_descp_menu,index)
-			if itemName in service_descp_menu:
-				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemName)+1))
+			if itemNam in service_descp_menu:
+				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemNam)+1))
 	return (False,some_list,some_list,index)
 
-#print(match_serv_menu("computer"))
+
+#print(match_serv_menu("gas"))

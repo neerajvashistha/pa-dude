@@ -5,6 +5,8 @@ import phrase_extract
 from pymongo import MongoClient
 import re
 import numpy as np
+import ast 
+from collections import defaultdict
 
 def main():
 	load_JSON_into_Collection("services.json","service_type")
@@ -14,11 +16,12 @@ def main():
 	#print(loc_serv_list)
 	#alist1 = queryServName("food","chinese")
 	phraseExtracted = someFunctoFetchValue("phraseExtracted")
-	print phraseExtracted
-	command="I want Manchurian"
-	loc_area="katra"
+	#print phraseExtracted
+	command="I want Manchurian and szechwan and butter chicken"
+	loc_area="katraj"
 	print(queryCollection(phraseExtracted,command,loc_area))
-	intrmList = queryCollection(phraseExtracted,command,loc_area)
+	intrmList = []
+	#intrmList = queryCollection(phraseExtracted,command,loc_area)
 	strop = ""
 	for i in range(len(intrmList)):
 		for k,v in intrmList[i].items():
@@ -28,7 +31,7 @@ def main():
 
 def someFunctoFetchValue(key):
 	import re
-	hand = open('filename.txt')
+	hand = open('140941274.txt')
 	for line in hand:
 	    line = line.rstrip()
 	    #print line
@@ -87,7 +90,7 @@ def queryServName(JSONobj_key1,JSONobj_key2):
 		print("Error has occurred", e)
 
 
-def queryServNameLocation(alist, location,index):
+def queryServNameLocation(alist, location,index_dict):
 	'''
 	param @alist, a list with refined vendors/service providers with name, phone, loc
 	param @location, str with location
@@ -100,44 +103,123 @@ def queryServNameLocation(alist, location,index):
 		priceList=list()
 		loc_serv_list =[]
 		blist=[]
+		uniloc_serv_list=[]
+		price =0
 		for i in alist:
 			#print i
 			for k,v in i.items():
 				if v == location.lower():
-					loc_serv_list.append(i)
+					loc_serv_list.append(str(i))#stringify the list for the purpose of finding unique list.
+		#print "\nhi",loc_serv_list
+		uniloc_serv_list = unique(loc_serv_list)
+		#print index_dict
+		#print uniloc_serv_list
+		compPriceList = []
+		priceList = []
 		if len(loc_serv_list) !=0:
-			compPrice = 0;
-			for i in range(len(loc_serv_list)):
-				for key,value in loc_serv_list[i].items():
-					if key == "menuprice":
-						price = value[index]
-						priceList.append(price)
-						loc_serv_list[i].pop('menuprice')
-				loc_serv_list[i]['price'] = price
-					#print key," : ", value
+			for serv_ty,index in index_dict.items():
+				for i in range(len(uniloc_serv_list)):
+					for key, value in uniloc_serv_list[i].items():
+						if value == serv_ty:
+							priceList.append(lowFucn(uniloc_serv_list[i],index))
 
 			#print priceList
-
-			lowPri = np.min(a[np.nonzero(priceList)])
-			
-			for i in range(len(loc_serv_list)):
-				for key,value in loc_serv_list[i].items():
-					if key == "price" and value == lowPri:
-						blist.append(loc_serv_list[i])
-					
+			temp = priceList[0].get("serv_type")	
+			#print temp
+			lowPri = 9999				
+			for i in range(len(priceList)):
+				typz = priceList[i].get("serv_type")
+				#print typz
+				if typz in priceList[i].values():
+					price = priceList[i].get("price")
+					if price<lowPri and temp == typz:
+						lowPri = price
+						blist.append(priceList[i])
+					else:
+						lowPri=9999
+					temp = typz
+			for i in range(len(blist)):
+				blist[i].pop("serv_type")
 
 			return blist
-		if len(loc_serv_list) == 0:
+		if len(uniloc_serv_list) == 0:
+			someLst = []
 			for i in alist:
-				for key,value in i.items():
-					if key == "menuprice":
-						price = value[index]
-						i.pop('menuprice')
-				i['price'] = price
-			return alist
-		#return loc_serv_list
+				someLst.append(str(i))# as unique() takes list have strings form dict only 
+			uniqueList = unique(someLst)
+			#print uniqueList
+			for serv_ty,index in index_dict.items():
+				for i in range(len(uniqueList)):
+					for key, value in uniqueList[i].items():
+						if value == serv_ty:
+							priceList.append(lowFucn(uniqueList[i],index))
+
+			#print priceList
+			temp = priceList[0].get("serv_type")	
+			#print temp
+			lowPri = 9999				
+			for i in range(len(priceList)):
+				typz = priceList[i].get("serv_type")
+				#print typz
+				if typz in priceList[i].values():
+					price = priceList[i].get("price")
+					if price<lowPri and temp == typz:
+						lowPri = price
+						blist.append(priceList[i])
+					else:
+						lowPri=9999
+					temp = typz
+			for i in range(len(blist)):
+				blist[i].pop("serv_type")
+
+			return blist
+
+	#return loc_serv_list
 	except Exception as e:
 		print("Error has occurred", e)
+
+def lowFucn(adict,alist):
+	price=0
+	for key,value in adict.items():
+		if key =="menuprice":
+			#print value[alist[0]]
+			for i in range(len(alist)):
+				price+=value[alist[i]]
+			adict.pop("menuprice")
+			adict['price'] = price
+	return adict
+
+def lowestcost(priceList,noItems):
+	lowPri = 9999
+	lowPriList =[]
+	indexLowPri = []
+	for i in range(len(priceList)):
+		if priceList[i] ==0:
+			priceList[i]=9999
+	if noItems == 1:
+		lowPri = min(priceList)
+		indexLowPri.append(priceList.index(lowPri))
+	if noItems ==2:
+		lowPri = min(priceList[0::2])+min(priceList[1::2])
+		indexLowPri.append(priceList.index(min(priceList[0::2])))
+		indexLowPri.append(priceList.index(min(priceList[1::2])))
+	if noItems == 3:
+		lowPri = min(priceList[0::3])+min(priceList[1::3])+min(priceList[2::3])
+		indexLowPri.append(priceList.index(min(priceList[0::3])))
+		indexLowPri.append(priceList.index(min(priceList[1::3])))
+		indexLowPri.append(priceList.index(min(priceList[2::3])))
+	#print type(lowPri)
+	return lowPri,indexLowPri
+
+def unique(seq):
+    seen = set()
+    seen_add = seen.add
+    alist = [x for x in seq if not (x in seen or seen_add(x))]
+    #print type(alist)
+    uniqueList = []
+    for i in range(len(alist)):
+			uniqueList.append(ast.literal_eval(alist[i]))
+    return uniqueList
 
 def queryCollection(itemList,query,location):
 	'''
@@ -145,23 +227,31 @@ def queryCollection(itemList,query,location):
 
 	return serv_prvd_list, which could be a list of servie providers, or menu list
 	'''
+	i=0
 	serv_prvd_list = []
 	serv_prvd_list1 = []
+	index_dict = defaultdict(list)
 	if len(itemList) !=0:
 		for item in itemList:
 			#fetch values from serv_decrp.py for an inquired <item>.
 			boolItemExist,servItem,servDecrp,indexForMenuprice= serv_decrp.match_serv_menu(item)#change func match_serv_menu
 			#boolItemExist,servItem,servDecrp could be <true/false>,<food>,<chinese> or<true/false>,<chinese>,<menulist> or none.
+			if (boolItemExist is False):
+				return str("Did you mean "+" ".join(phrase_extract.extract_phrase(query)))
 			if (boolItemExist is True):
 				if isinstance(servDecrp, basestring):
+					#print "\nhe",serv_prvd_list1,indexForMenuprice
 					serv_prvd_list1 += queryServName(servItem,servDecrp)#change func queryServName
-					#print serv_prvd_list1,indexForMenuprice
-					serv_prvd_list = queryServNameLocation(serv_prvd_list1,location,indexForMenuprice)
+					#serv_prvd_list1=[]
 					#print serv_prvd_list
+					index_dict[servDecrp].append(indexForMenuprice)
+
 				elif isinstance(servDecrp, list):
 					serv_prvd_list = servDecrp
-			elif (boolItemExist is False):
-				serv_prvd_list = ["Did you mean", phrase_extract.extract_phrase(query)]
+			
+		#print serv_prvd_list1
+		#print [index_dict]
+		serv_prvd_list = queryServNameLocation(serv_prvd_list1,location,index_dict)
 	else:
 		serv_prvd_list = ["ok"]
 	return serv_prvd_list
@@ -178,13 +268,13 @@ def dropCollection(col_name):
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://akhilari7.ddns.net:27027")
+client = MongoClient("mongodb://127.0.0.1:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://akhilari7.ddns.net:27027")
+	client = MongoClient("mongodb://127.0.0.1:27027")
 	db = client.test
 	main()
 	db.close

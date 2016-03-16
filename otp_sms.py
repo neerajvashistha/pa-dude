@@ -6,7 +6,7 @@ import re
 import base64
 import onetimepass as otp
 
-def initialize(phn_no,msg):
+def sendsmses(phn_no,msg):
     username = '7066185125'
     passwd = 'deadpool227'
     message = msg
@@ -60,4 +60,4 @@ def get_otp(Ph_number,chat_id):
     my_token = otp.get_totp(my_secret,interval_length = 300)
     msg = my_token
     phn_no = Ph_number
-    initialize(phn_no,str(msg))
+    sendsmses(phn_no,str(msg))

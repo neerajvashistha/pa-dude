@@ -4,21 +4,21 @@
       [
         { "type":"chinese","serv_prvd":
           [
-            { "serv_name":"Rolls Delight","serv_loc":"katraj","phone":919673637284,"menuprice":[40,50,110,100,150,100,40,70,75,90,0,0,0]},
-            { "serv_name":"Chinese Corner","serv_loc":"katraj","phone":919673637284,"menuprice":[50,40,115,110,0,90,45,75,70,90,100,40,40]},
-            { "serv_name":"China point","serv_loc":"khadi machine","phone":919673637284,"menuprice":[40,50,110,95,140,130,50,80,65,95,0,40,45]}
+            { "serv_type":"chinese","serv_name":"Rolls Delight","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90,0,0,0]},
+            { "serv_type":"chinese","serv_name":"Chinese Corner","serv_loc":"katraj","phone":7066185125,"menuprice":[50,40,115,110,0,90,45,75,70,90,100,40,40]},
+            { "serv_type":"chinese","serv_name":"China point","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,95,140,130,50,80,65,95,0,40,45]}
           ]          
         },
         { "type":"maharashtrian","serv_prvd":
           [
-            { "serv_name":"Jaagat Bhari Kolhapuri","serv_loc":"swargate","phone":919673637284,"menuprice":[40,50,110,100,150,100,40,70,75,90]},
-            { "serv_name":"Shiva Nand","serv_loc":"khadi machine","phone":919673637284,"menuprice":[40,50,110,100,150,100,40,70,75,90]}
+            { "serv_type":"maharashtrian","serv_name":"Jaagat Bhari Kolhapuri","serv_loc":"swargate","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90]},
+            { "serv_type":"maharashtrian","serv_name":"Shiva Nand","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90]}
           ]
         },
         { "type":"punjabi","serv_prvd":
           [
-            { "serv_name":"Soul Spice Restaurant","serv_loc":"katraj","phone":919673637284,"menuprice":[40,50,110,100,150,100,40,70,75,90]},
-            { "serv_name":"Govinda's","serv_loc":"khadi machine","phone":919673637284,"menuprice":[40,50,110,100,150,100,40,70,75,90]}
+            { "serv_type":"punjabi","serv_name":"Soul Spice Restaurant","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90]},
+            { "serv_type":"punjabi","serv_name":"Govinda's","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90]}
            ]
         }
       ]
@@ -27,27 +27,27 @@
       [
         { "type":"kitchen","serv_prvd":
           [
-            { "serv_name":"Om Sai Services","serv_loc":"katraj","phone":919673637284},
-            { "serv_name":"Namo Surya Services","serv_loc":"katraj","phone":919673637284},
-            { "serv_name":"Bakare Services","serv_loc":"khadi machine","phone":919673637284}
+            { "serv_type":"kitchen","serv_name":"Om Sai Services","serv_loc":"katraj","phone":7066185125},
+            { "serv_type":"kitchen","serv_name":"Namo Surya Services","serv_loc":"katraj","phone":7066185125},
+            { "serv_type":"kitchen","serv_name":"Bakare Services","serv_loc":"khadi machine","phone":7066185125}
           ]
         },
         { "type":"household_electrical","serv_prvd":
           [
-            { "serv_name":"Vaibhav Laxmi Electrical","serv_loc":"katraj","phone":919673637284},
-            { "serv_name":"M Dinar Electricals","serv_loc":"khadi machine","phone":919673637284}
+            { "serv_type":"household_electrical","serv_name":"Vaibhav Laxmi Electrical","serv_loc":"katraj","phone":7066185125},
+            { "serv_name":"household_electrical","serv_loc":"khadi machine","phone":7066185125}
           ]
         },
         { "type":"household_water","serv_prvd":
           [
-            { "serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":919673637284},
-            { "serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":919673637284}
+            { "serv_type":"household_water","serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":7066185125},
+            { "serv_type":"household_water","serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":7066185125}
           ]
         },
         { "type":"computer","serv_prvd":
           [
-            { "serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":919673637284},
-            { "serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":919673637284}
+            { "serv_type":"computer","serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":7066185125},
+            { "serv_type":"computer","serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":7066185125}
           ]
         }
       ]

@@ -1,0 +1,33 @@
+chat_id:140941274
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+number:7066185125
+chat_id:140941274
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian', u'szechwan',u'butter chicken']
+command:i want manchurian, szechwan and butter chicken
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+phraseExtracted:[u'manchurian schewan', u'butter chicken']
+command:i want manchurian, schewan, butter chicken
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want muchurian and butter chicken
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
