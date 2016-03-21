@@ -64,26 +64,41 @@ kernel.setBotPredicate("ethics" , "  I am always trying to stop fights")
 kernel.setBotPredicate("emotions" , "I don't pay much attention to my feelings")
 kernel.setBotPredicate("feelings" , "I always put others before myself")
 
-if os.path.isfile("bot_brain.brn"):
-    kernel.bootstrap(brainFile = "bot_brain.brn")
-else:
-    kernel.bootstrap(learnFiles = "std_startup.xml", commands = "load aiml b")
-    kernel.saveBrain("bot_brain.brn")
 
 
-bot_name = kernel.getBotPredicate("name")
-print bot_name
-sessionId = 12345
-# kernel now ready for use
-while True:
-    message = raw_input("HUMAN>> ")
-    if message == "quit":
-        sessionData = kernel.getSessionData(sessionId)
-        print sessionData
-        exit()
-    elif message == "save":
-        kernel.saveBrain("bot_brain.brn")
+def responds(msg,id=12345):
+    sessionId = int(id)
+    if os.path.isfile("bot_brain.brn"):
+        kernel.verbose(False)
+        kernel.bootstrap(brainFile = "bot_brain.brn")
+    bot_response=kernel.respond(msg, sessionId)
+    return bot_response
+
+
+
+
+if __name__ == "__main__":
+    kernel.verbose(False)
+    if os.path.isfile("bot_brain.brn"):
+        kernel.bootstrap(brainFile = "bot_brain.brn")
     else:
-        bot_response=kernel.respond(message, sessionId)
-        # Do something with bot_response
-        print "ROBOT> ",bot_response
+        kernel.bootstrap(learnFiles = "std_startup.xml", commands = "load aiml b")
+        kernel.saveBrain("bot_brain.brn")
+    bot_name = kernel.getBotPredicate("name")
+    print bot_name
+    sessionId = 12345
+    # kernel now ready for use
+    while True:
+        message = raw_input("HUMAN>> ")
+        if message == "quit":
+            sessionData = kernel.getSessionData(sessionId)
+            print sessionData
+            exit()
+        elif message == "save":
+            kernel.saveBrain("bot_brain.brn")
+        else:
+            bot_response=kernel.respond(message, sessionId)
+            # Do something with bot_response
+            print "ROBOT> ",bot_response
+            if not bot_response:
+                print "hi" 

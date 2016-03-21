@@ -1,10 +1,9 @@
 import json
 import pymongo
-import serv_decrp
+import serv_decrp,sillybot
 import phrase_extract
 from pymongo import MongoClient
 import re
-import numpy as np
 import ast,math
 from collections import defaultdict
 
@@ -15,33 +14,20 @@ def main():
 
 	#print(loc_serv_list)
 	#alist1 = queryServName("food","chinese")
-	phraseExtracted = someFunctoFetchValue("phraseExtracted")
+	#phraseExtracted = someFunctoFetchValue("phraseExtracted")
 	#print phraseExtracted
-	command="I want Manchurian and szechwan and butter chicken"
-	loc_area="katraj"
-	print(queryCollection(phraseExtracted,command,loc_area))
-	intrmList = []
+	#phraseExtracted = ['manchurian','rice']
+	#command="I want rice,manchurian"
+	#loc_area="katraj"
+	#print(queryCollection(phraseExtracted,command,loc_area))
+	#intrmList = []
 	#intrmList = queryCollection(phraseExtracted,command,loc_area)
-	strop = ""
-	for i in range(len(intrmList)):
-		for k,v in intrmList[i].items():
-			strop += str(k)+ " : "+str(v) +"\n"
-	print strop
+	#strop = ""
+	#for i in range(len(intrmList)):
+	#	for k,v in intrmList[i].items():
+	#		strop += str(k)+ " : "+str(v) +"\n"
+	#print strop
 	dropCollection("services")
-
-def someFunctoFetchValue(key):
-	import re
-	hand = open('140941274.txt')
-	for line in hand:
-	    line = line.rstrip()
-	    #print line
-	    if re.search(key, line) :
-	    	#print type(line)
-	    	if isinstance(line, basestring):
-	    		return phrase_extract.extract_phrase(line)
-	    	if isinstance(line, list):
-	    		l = re.findall(':\S+', line)
-	    		return re.findall('[a-zA-Z0-9]\S*[a-zA-Z0-9]',str(l))[0]
 
 def load_JSON_into_Collection(filename,JSONobj):
 	'''
@@ -166,7 +152,7 @@ def queryServNameLocation(alist, location,index_dict):
 				#print typz
 				if typz in priceList[i].values():
 					price = priceList[i].get("price")
-					if price is u"-999":
+					if price is u"9999":
 						priceList[i]['price']="Req"
 						blist.append(priceList[i])
 					if price<lowPri and temp == typz:
@@ -180,7 +166,7 @@ def queryServNameLocation(alist, location,index_dict):
 		if len(blist)==0:
 			blist = ["Item/Service not avail"]
 
-		return blist
+		return [blist[0]]
 
 	#return loc_serv_list
 	except Exception as e:
@@ -195,32 +181,10 @@ def lowFucn(adict,alist):
 				if value[alist[i]]!=0:
 					price+=value[alist[i]]
 				else:
-					price = u"-999"
+					price = u"9999"
 			adict.pop("menuprice")
 			adict['price'] = price
 	return adict
-
-def lowestcost(priceList,noItems):
-	lowPri = 9999
-	lowPriList =[]
-	indexLowPri = []
-	for i in range(len(priceList)):
-		if priceList[i] ==0:
-			priceList[i]=9999
-	if noItems == 1:
-		lowPri = min(priceList)
-		indexLowPri.append(priceList.index(lowPri))
-	if noItems ==2:
-		lowPri = min(priceList[0::2])+min(priceList[1::2])
-		indexLowPri.append(priceList.index(min(priceList[0::2])))
-		indexLowPri.append(priceList.index(min(priceList[1::2])))
-	if noItems == 3:
-		lowPri = min(priceList[0::3])+min(priceList[1::3])+min(priceList[2::3])
-		indexLowPri.append(priceList.index(min(priceList[0::3])))
-		indexLowPri.append(priceList.index(min(priceList[1::3])))
-		indexLowPri.append(priceList.index(min(priceList[2::3])))
-	#print type(lowPri)
-	return lowPri,indexLowPri
 
 def unique(seq):
     seen = set()
@@ -248,7 +212,11 @@ def queryCollection(itemList,query,location):
 			boolItemExist,servItem,servDecrp,indexForMenuprice= serv_decrp.match_serv_menu(item)#change func match_serv_menu
 			#boolItemExist,servItem,servDecrp could be <true/false>,<food>,<chinese> or<true/false>,<chinese>,<menulist> or none.
 			if (boolItemExist is False):
-				return str("Did you mean "+" ".join(phrase_extract.extract_phrase(query)))
+				#sillybot.load()
+				stri = sillybot.responds(query)
+				return stri
+				#return str("Did you mean "+" ".join(phrase_extract.extract_phrase(query)))
+
 			if (boolItemExist is True):
 				if isinstance(servDecrp, basestring):
 					#print "\nhe",serv_prvd_list1,indexForMenuprice

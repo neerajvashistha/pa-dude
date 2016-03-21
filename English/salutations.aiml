@@ -361,4 +361,7 @@
 <category><pattern>REPLY</pattern>
 <template><srai>hello</srai></template>
 </category>
+<category><pattern>HI</pattern>
+<template>hi!</template>
+</category>
 </aiml>

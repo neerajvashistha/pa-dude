@@ -4,9 +4,9 @@
       [
         { "type":"chinese","serv_prvd":
           [
-            { "serv_type":"chinese","serv_name":"Rolls Delight","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90,0,0,0]},
-            { "serv_type":"chinese","serv_name":"Chinese Corner","serv_loc":"katraj","phone":7066185125,"menuprice":[50,40,115,110,0,90,45,75,70,90,100,40,0]},
-            { "serv_type":"chinese","serv_name":"China point","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,95,140,130,50,80,65,95,0,40,0]}
+            { "serv_type":"chinese","serv_name":"Rolls Delight","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90,9999,9999,9999]},
+            { "serv_type":"chinese","serv_name":"Chinese Corner","serv_loc":"katraj","phone":7066185125,"menuprice":[50,40,115,110,9999,90,45,75,70,90,100,40,9999]},
+            { "serv_type":"chinese","serv_name":"China point","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,95,140,130,50,80,65,95,9999,40,9999]}
           ]          
         },
         { "type":"maharashtrian","serv_prvd":

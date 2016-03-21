@@ -13,5 +13,10 @@
          Your name is <get name="name"/>.
       </template>  
    </category>  
-
+   <category>
+      <pattern>CAN I HAVE *</pattern>
+      <template>
+         ok, you want <set name="item"><star/></set>
+      </template>  
+   </category> 
 </aiml>

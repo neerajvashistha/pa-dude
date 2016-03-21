@@ -45,3 +45,61 @@ command:i want rice
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:8237420139
+chat_id:140941274
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+phraseExtracted:[u'manchurian', u'noodles']
+command:I want Manchurian and noodles
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------[chat_id:153376675]
+phraseExtracted:[u'manchurian', u'fried rice']
+command:I want to order Manchurian and fried rice
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+phraseExtracted:[u'manchurian']
+command:I want to order a Manchurian
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+phraseExtracted:[u'manchurian', u'fried rice']
+command:I want to order a manchurian and some fried rice
+cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
+loc_area:katraj
+cust_phone:9673637284
+--------------------------

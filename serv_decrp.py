@@ -55,6 +55,7 @@ services = {
 		      		"mixer grinder",
 		      		"water heater",
 		      		"water leakage",
+		      		"water leaking"
 		      		"cabinate refacing"
 		  	    ],
 		  	    "household_electrical":
@@ -97,14 +98,16 @@ def match_serv_menu(itemName):
 			for item in new_list:
 				itemNam =  item
 	#print itemNam
-	for service_type_key,service_descp_values in services.items(): #food,chinese
-		for service_descp_key,service_descp_menu in service_descp_values.items(): #chinese,[]
-			if itemNam in service_descp_key:
-				index =0
-				return (True,service_descp_key,service_descp_menu,index)
-			if itemNam in service_descp_menu:
-				return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemNam)))
-	return (False,some_list,some_list,index)
+	if itemNam:
+		for service_type_key,service_descp_values in services.items(): #food,chinese
+			for service_descp_key,service_descp_menu in service_descp_values.items(): #chinese,[]
+				if itemNam in service_descp_key:
+					index =0
+					return (True,service_descp_key,service_descp_menu,index)
+				if itemNam in service_descp_menu:
+					return (True,service_type_key,service_descp_key,(service_descp_menu.index(itemNam)))
+	else:
+		return (False,some_list,some_list,index)
 
 
-print(match_serv_menu("noodles"))
+#print(match_serv_menu("cool"))
