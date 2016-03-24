@@ -17,7 +17,9 @@ def main():
 	#phraseExtracted = someFunctoFetchValue("phraseExtracted")
 	#print phraseExtracted
 	#phraseExtracted = ['manchurian','rice']
-	#command="I want rice,manchurian"
+	#command="Haa got you"
+	#print command
+	#phraseExtracted = phrase_extract.extract_phrase(command)
 	#loc_area="katraj"
 	#print(queryCollection(phraseExtracted,command,loc_area))
 	#intrmList = []
@@ -247,13 +249,13 @@ def dropCollection(col_name):
 	except Exception as e:
 		print("Error has occurred", e)
 
-client = MongoClient("mongodb://127.0.0.1:27027")
+client = MongoClient("mongodb://192.168.203.130:27027")
 db = client.test
 
 load_JSON_into_Collection("services.json","service_type")
 
 if __name__ == "__main__":
-	client = MongoClient("mongodb://127.0.0.1:27027")
+	client = MongoClient("mongodb://192.168.203.130:27027")
 	db = client.test
 	main()
 	db.close

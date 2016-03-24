@@ -21,4 +21,4 @@ def extract_phrase(sentence):
 	phraseList = rake.generate_candidate_keywords(sentenceList, stopwordpattern)
 	return phraseList
 
-#print(extract_phrase(sys.argv[1]))
+#print(extract_phrase("Haa got you"))

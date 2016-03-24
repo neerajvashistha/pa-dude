@@ -103,3 +103,11 @@ cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Kat
 loc_area:katraj
 cust_phone:9673637284
 --------------------------
+140941274 : What's up bro?140941274 : I am chatting with clients on the Internet.140941274 : Ok140941274 : How can I help you?140941274 : How do you do?140941274 : Fair to partly cloudy.140941274 : Ohh140941274 : You may be wondering if this is a person or a computer responding.140941274 : No I know who are you.140941274 : Gee.. My name is DUDE.140941274 : Ok140941274 : That's interesting.140941274 : Shutup140941274 : Absolutely.140941274 : I want Manchurian140941274 : 8237420139[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:I want Manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : Cool140941274 : Are you kidding?140941274 : Cool140941274 : [u'pool']140941274 : Tell me more.

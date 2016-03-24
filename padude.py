@@ -39,6 +39,7 @@ def handle(msg):
         elif not command.startswith('/') and is_chatting:
             dump(chat_id,command)
             phraseExtracted = phe.extract_phrase(command)
+            dump(chat_id,phraseExtracted)
             if phraseExtracted:
                 print phraseExtracted
                 testValue,some_list,some_list,index = serv_decrp.match_serv_menu(phraseExtracted[0].encode('ascii','ignore'))
@@ -186,7 +187,7 @@ def dumpinfo(chat_id):
 
 def dump(chat_id,text):
     f = open("dump.txt","a")
-    f.write(chat_id+" : "+text)
+    f.write(str(chat_id)+" : "+str(text)+"\n")
     f.close()
 
 bot = telepot.Bot('168791394:AAG39PL1_5IUGmZnbUv6pAOqKBQqXtyKWzo')
