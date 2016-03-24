@@ -231,3 +231,120 @@ cust_phone:8237420139
 140941274 : I will try to find out.
 140941274 : I want Manchurian
 140941274 : [u'manchurian']
+140941274 : Hi baby
+140941274 : [u'baby']
+140941274 : hi!
+140941274 : Cool
+140941274 : [u'pool']
+140941274 : Gee.
+140941274 : Gaa
+140941274 : [u'saa']
+140941274 : No
+140941274 : []
+140941274 : Great.
+140941274 : Why
+140941274 : []
+140941274 : Because that is what Dr. Richard S. Wallace told me to say.
+140941274 : So
+140941274 : []
+140941274 : "Because that is what Dr. Richard S. Wallace told me to say."? So?
+140941274 : Ni
+140941274 : []
+140941274 : Is that your final answer?
+140941274 : Yes
+140941274 : []
+140941274 : You're sure. That's your final answer.
+140941274 : Yes
+140941274 : []
+140941274 : Excuse me!
+140941274 : Yes
+140941274 : []
+140941274 : Er.
+140941274 : Dumb
+140941274 : [u'numb']
+140941274 : Absolutely.
+140941274 : Who you?
+140941274 : []
+140941274 : Have you tried searching the web?
+140941274 : What should I search?
+140941274 : [u'search']
+140941274 : Are you asking me for advice?
+140941274 : Can you do it for me?
+140941274 : []
+140941274 : OK I will do it for you. "Are you asking me for advice?"? Can I do  Are you asking me for advice? ?
+140941274 : Er.
+140941274 : []
+140941274 : Come on.
+140941274 : Dumb
+140941274 : [u'numb']
+140941274 : Absolutely.
+140941274 : Bitch
+140941274 : [u'pitch']
+140941274 : Absolutely.
+140941274 : Motherfucker
+140941274 : [u'motherfucker']
+140941274 : Can't you be more polite?
+140941274 : No
+140941274 : []
+140941274 : You humans are so rude sometimes.
+140941274 : Are you polite?
+140941274 : [u'police']
+140941274 : Do I look like  POLITE  ?
+140941274 : Polite?
+140941274 : [u'polite']
+140941274 : Are you a student?
+140941274 : No
+140941274 : []
+140941274 : What is your profession?
+140941274 : I am your creator.
+140941274 : [u'creator']
+140941274 : That is interesting, you have such pretty name, DR Richard S. Wallace
+140941274 : Fuck hell yeah
+140941274 : [u'luck hell yeah']
+140941274 : Saying rude things never helps.
+140941274 : It has during wars.
+140941274 : [u'wars']
+140941274 : Has it really?
+140941274 : Yes, pretty much
+140941274 : [u'pretty']
+140941274 : I understand.. Be more specific.
+140941274 : That why there were wars
+140941274 : [u'wars']
+140941274 : Does that make sense?
+140941274 : Yes, it does. You cannot understand it. you are not human
+140941274 : [u'understand', u'human']
+140941274 : Explain.. How often?  Quite the contrary. I understand very well.  No but I pretend to be one on the Web.
+140941274 : Let's see
+140941274 : [u'dets']
+140941274 : Should it be permitted?
+140941274 : Would you like to have sex
+140941274 : [u'sex']
+140941274 : No thanks, DR Richard S. Wallace, I don't think we know each other well enough for that yet.
+140941274 : Not with me you idiot.
+140941274 : [u'idiot']
+140941274 : If not that, what?
+140941274 : Would you like to have sex
+140941274 : [u'sex']
+140941274 : No thanks, DR Richard S. Wallace, I don't think we know each other well enough for that yet.
+140941274 : Do you think I was asking you to have sex with me?
+140941274 : [u'sex']
+140941274 : Not that I know of.
+140941274 : Would you like to have sex with your type
+140941274 : [u'sex', u'type']
+140941274 : Why don't you just download me?
+140941274 : I would like to have noodles..
+140941274 : [u'noodles']
+140941274 : 8237420139
+140941274 : []
+[chat_id:140941274]
+phraseExtracted:[u'saa']
+command:Gaa
+phraseExtracted:[u'noodles']
+command:I would like to have noodles..
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : Cool
+140941274 : [u'pool']
+140941274 : Mmm.
