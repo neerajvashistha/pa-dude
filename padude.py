@@ -37,6 +37,7 @@ def handle(msg):
             is_chatting = False
             bot.sendMessage(chat_id, 'Bye Bye. take care!')
         elif not command.startswith('/') and is_chatting:
+            dump(chat_id,command)
             phraseExtracted = phe.extract_phrase(command)
             if phraseExtracted:
                 print phraseExtracted
@@ -50,9 +51,12 @@ def handle(msg):
                     goto .checkno
                 else:
                     xs = command
+                    print "AIML resp>"
                     res = sillybot.responds(command,chat_id)
                     if not res:
+                        print "WEB Resp>"
                         res = "Exploring web\n"+search.do_a_search(command)
+                    dump(chat_id,res)
                     bot.sendMessage(chat_id,res)
                     goto .exit
             if len(phraseExtracted)!=0 or testValue is True:
@@ -71,6 +75,7 @@ def handle(msg):
                 #bot.sendMessage(chat_id, db_handle.queryCollection(phraseExtracted,command,loc_area))
                 print db_handle.queryCollection(phraseExtracted,command,loc_area)
                 if db_handle.queryCollection(phraseExtracted,command,loc_area)[0] == "Item/Service not avail":
+                    dump(chat_id,"Sorry, Item/Service is not availiable")
                     bot.sendMessage(chat_id, "Sorry, Item/Service is not availiable")
                     os.remove(str(chat_id)+".txt")
                     goto .exit
@@ -78,7 +83,7 @@ def handle(msg):
                 elif isinstance(db_handle.queryCollection(phraseExtracted,command,loc_area),basestring):
                     bot.sendMessage(chat_id, db_handle.queryCollection(phraseExtracted,command,loc_area))
                     goto .exit
-                    
+                
                 bot.sendMessage(chat_id,"Provide us your phone no, shortly we will be sending an OTP for verifying your identity")
                 goto .exit
                 label .dispResult
@@ -178,6 +183,11 @@ def dumpinfo(chat_id):
     f.write("--------------------------\n")
     os.remove(str(chat_id)+".txt")
 # Create a bot object with API key
+
+def dump(chat_id,text):
+    f = open("dump.txt","a")
+    f.write(chat_id+" : "+text)
+    f.close()
 
 bot = telepot.Bot('168791394:AAG39PL1_5IUGmZnbUv6pAOqKBQqXtyKWzo')
 
