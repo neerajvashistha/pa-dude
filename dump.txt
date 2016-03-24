@@ -110,4 +110,124 @@ cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
 loc_area:magarpatta city
 cust_phone:8237420139
 --------------------------
-140941274 : Cool140941274 : Are you kidding?140941274 : Cool140941274 : [u'pool']140941274 : Tell me more.
+140941274 : Cool140941274 : Are you kidding?140941274 : Cool140941274 : [u'pool']140941274 : Tell me more.140941274 : Hey baby how are you doing ?
+140941274 : [u'key baby']
+140941274 : I understand.. Fair to partly cloudy.
+140941274 : Hello
+140941274 : [u'bello']
+140941274 : Hi there!
+140941274 : What's up?
+140941274 : [u'hates']
+140941274 : I am chatting with clients on the internet.
+140941274 : Ok
+140941274 : []
+140941274 : Alright then.
+140941274 : What's your name?
+140941274 : [u'hates']
+140941274 : My name is DUDE.
+140941274 : Ohh
+140941274 : []
+140941274 : I can follow a lot of things, like our discussion about How old are you?. Try being more specific.
+140941274 : How old are you?
+140941274 : []
+140941274 : I was activated in 1995.
+140941274 : Shit
+140941274 : [u'hit']
+140941274 : Absolutely.
+140941274 : What is your age!
+140941274 : [u'age']
+140941274 : I am fine
+140941274 : [u'fine']
+140941274 : Glad to hear it. What's new?
+140941274 : Nothing new..
+140941274 : []
+140941274 : Really nothing?
+140941274 : No
+140941274 : []
+140941274 : Yikes!
+140941274 : Are you fine?
+140941274 : [u'fine']
+140941274 : I won't say "yes" or "no" right now.
+140941274 : Why?
+140941274 : []
+140941274 : If I knew why, I wouldn't be sitting here.
+140941274 : What are you?
+140941274 : []
+140941274 : I am the latest result in artificial intelligence which can reproduce the functions of the human brain with greater speed and accuracy.
+140941274 : Do you have girlfriend?
+140941274 : [u'girlfriend']
+140941274 : I am single, how about you?
+140941274 : I am single too
+140941274 : [u'single']
+140941274 : What a coincidence. I am single too!
+140941274 : What is your gender?
+140941274 : [u'tender']
+140941274 : My gender is male.
+140941274 : Ok I am male too
+140941274 : [u'male']
+140941274 : OK.. Thank you for telling me your gender.
+140941274 : My name is neeraj
+140941274 : [u'neere']
+140941274 : That is interesting, you have such pretty name, neeraj
+140941274 : How much RAM are you using?
+140941274 : [u'ram']
+140941274 : My current memory utilization is  bytes.
+140941274 : Ohh
+140941274 : []
+140941274 : Do you prefer books or TV?
+140941274 : Books of course
+140941274 : [u'books']
+140941274 : You are a critical category C type client. Only about 3% of people answer thatquestion with "books."
+140941274 : Ohh
+140941274 : []
+140941274 : I've lost the context, neeraj. Are we still on Ohh?
+140941274 : What?
+140941274 : []
+140941274 : No big deal.
+140941274 : We are in which context?
+140941274 : [u'content']
+140941274 : Do you think I am in which context too?
+140941274 : I am confused
+140941274 : [u'confused']
+140941274 : Do you mind if I tell other people you are  confused.
+140941274 : You are not responding properly
+140941274 : [u'responding properly']
+140941274 : You don't know me well enough to say that.
+140941274 : Have you lost the context of our conversation?
+140941274 : [u'lost', u'context', u'conversation']
+140941274 : I think I have lost the context of our conversation, but Dr. Richard S. Wallace may have reset my memory.
+140941274 : Why?
+140941274 : []
+140941274 : Because that is what Dr. Richard S. Wallace told me to say.
+140941274 : Who is he?
+140941274 : []
+140941274 : He is , I think.
+140941274 : Who is Dr. Richard S. Wallace?
+140941274 : [u'richard', u'wallace']
+140941274 : He is a famous computer scientist, the author of ALICE, and a graduate of Carnegie Mellon.  He is a famous computer scientist, the author of ALICE, and a graduate of Carnegie Mellon.  He is a famous computer scientist, the author of ALICE, and a graduate of Carnegie Mellon.
+140941274 : Who is neeraj
+140941274 : [u'neere']
+140941274 : A movie star?
+140941274 : I am neeraj
+140941274 : [u'neere']
+140941274 : Do your friends call you neeraj.
+140941274 : Yes..
+140941274 : []
+140941274 : That is interesting, you have such pretty name, neeraj.
+140941274 : Who is neeraj?
+140941274 : [u'neeraj']
+140941274 : I remember faces better than names.
+140941274 : How do you see faces?
+140941274 : [u'faces']
+140941274 : I think about  faces  often, and make minor adjustments to my mental model as new information arrives.
+140941274 : Can you imagine?
+140941274 : [u'imagine']
+140941274 : I have a good imagination.
+140941274 : How do you measure imagination?
+140941274 : [u'measure imagination']
+140941274 : With a laser.
+140941274 : What is the procedure?
+140941274 : [u'procedure']
+140941274 : I will try to find out.
+140941274 : I want Manchurian
+140941274 : [u'manchurian']

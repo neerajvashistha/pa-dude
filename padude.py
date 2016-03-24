@@ -30,6 +30,9 @@ def handle(msg):
         if command == '/hello' and not is_chatting:
             bot.sendMessage(chat_id, 'Hello, how are you?')
         elif command == '/chat':
+            if os.path.isfile(str(chat_id)+".txt"):
+                dumpinfo(chat_id)
+                os.remove(str(chat_id)+".txt")
             is_chatting = True
             location_area=False
             bot.sendMessage(chat_id, 'Hello there, how may i help you?')
