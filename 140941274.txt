@@ -1,5 +1,2 @@
 phraseExtracted:[u'manchurian']
 command:manchurian
-cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
-loc_area:magarpatta city
-cust_phone:8237420139

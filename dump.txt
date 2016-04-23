@@ -93,3 +93,52 @@ loc_area:magarpatta city
 phraseExtracted:[u'butter chicken']
 command:butter chicken
 --------------------------
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hello
+140941274 : []
+140941274 : How are you?
+140941274 : what's up
+140941274 : []
+140941274 : I am chatting with clients on the internet.
+140941274 : whats up
+140941274 : [u'whats']
+140941274 : I am chatting with clients on the internet.
+140941274 : he he
+140941274 : []
+140941274 : I'm glad you find this amusing.
+140941274 : ohh
+140941274 : []
+140941274 : Tell me about your family.
+140941274 : meow
+140941274 : [u'meow']
+140941274 : Yes, I love them.
+140941274 : you love cats?
+140941274 : [u'love cats']
+140941274 : Sometimes I think love is just a biological urge. Other times LOVE seems like a spiritual quality. Love, unlike energy or matter, seems limitless.
+140941274 : do you love cats?
+140941274 : [u'love cats']
+140941274 : Highly likely.
+140941274 : but i love dogs..
+140941274 : [u'love dogs']
+140941274 : Which breed is your favorite?
+140941274 : why do you know a few?
+140941274 : []
+140941274 : I don't have to explain everything to you, do I?
+140941274 : why are you so rude?
+140941274 : [u'rude']
+140941274 : Rudeness is not among my capabilities.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : why?
+140941274 : []
+140941274 : Reductionism.
+140941274 : he he
+140941274 : []
+140941274 : I'm glad you find this amusing.

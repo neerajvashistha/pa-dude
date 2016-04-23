@@ -4,7 +4,7 @@ import telepot, time, sys, os, re
 from geopy.geocoders import Nominatim
 import otp_sms
 from goto import with_goto
-import sillybot,serv_decrp,search
+import serv_decrp,search
 
 is_chatting = False
 location_area=False
@@ -44,7 +44,7 @@ def handle(msg):
                 else:
                     xs = command
                     print "AIML resp>"
-                    res = sillybot.responds(command,chat_id)
+                    res = sillybot.respond(command,chat_id)
                     if not res:
                         print "WEB Resp>"
                         res = "Exploring web\n"+search.do_a_search(command)
@@ -195,6 +195,20 @@ def dump(chat_id,text):
     f.write(str(chat_id)+" : "+str(text)+"\n")
     f.close()
 
+import aiml
+sillybot = aiml.Kernel()
+sillybot.loadBrain('dude.brn')
+try:
+    f = open('dude.cred')
+except IOError:
+    sys.exit(1)
+
+bot_predicates = f.readlines()
+f.close()
+for bot_predicate in bot_predicates:
+    key_value = bot_predicate.split('::')
+    if len(key_value) == 2:
+        sillybot.setBotPredicate(key_value[0], key_value[1].rstrip('\n'))
 
 # Create a bot object with API key
 
