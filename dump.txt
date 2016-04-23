@@ -3,45 +3,23 @@ phraseExtracted:[u'manchurian']
 command:i want manchurian
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
-number:7066185125
-chat_id:140941274
-phraseExtracted:[u'manchurian']
-command:i want manchurian
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
+cust_phone:9860919334
 cust_phone:8237420139
 phraseExtracted:[u'manchurian']
 command:i want manchurian
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
-chat_id:140941274
-phraseExtracted:[u'manchurian', u'szechwan',u'butter chicken']
-command:i want manchurian, szechwan and butter chicken
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
-phraseExtracted:[u'manchurian schewan', u'butter chicken']
-command:i want manchurian, schewan, butter chicken
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
 cust_phone:8237420139
 chat_id:140941274
-phraseExtracted:[u'manchurian', u'butter chicken']
-command:i want muchurian and butter chicken
+phraseExtracted:[u'manchurian']
+command:i want manchurian
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
-cust_phone:8237420139
-chat_id:140941274
-phraseExtracted:[u'rice']
-command:i want rice
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
-phraseExtracted:[u'rice']
-command:i want rice
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
-phraseExtracted:[u'rice']
-command:i want rice
+phraseExtracted:[u'manchurian']
+command:i want manchurian
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
@@ -52,54 +30,66 @@ cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Kat
 loc_area:katraj
 cust_phone:8237420139
 chat_id:140941274
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
+phraseExtracted:[u'butter chicken']
+command:i want butter chicken
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
 chat_id:140941274
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
+phraseExtracted:[u'butter chicken']
+command:i want butter chicken
 cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
 loc_area:katraj
 cust_phone:8237420139
-chat_id:140941274
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
-cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
-loc_area:magarpatta city
-cust_phone:8237420139
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
 [chat_id:140941274]
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
-cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
-loc_area:magarpatta city
-cust_phone:8237420139
-phraseExtracted:[u'manchurian', u'noodles']
-command:I want Manchurian and noodles
-cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
-loc_area:magarpatta city
-cust_phone:8237420139
---------------------------[chat_id:140941274]
 phraseExtracted:[u'manchurian']
-command:I want Manchurian
+command:manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'sedan']
+command:sedan
 cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
 loc_area:magarpatta city
 cust_phone:8237420139
---------------------------[chat_id:153376675]
-phraseExtracted:[u'manchurian', u'fried rice']
-command:I want to order Manchurian and fried rice
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
+--------------------------
+140941274 : good
+140941274 : []
+140941274 : Alright then.
+140941274 : sendng
+140941274 : [u'sending']
+140941274 : I really enjoy speaking with you and look forward to chatting again.
+140941274 : fnd
+140941274 : []
+140941274 : You are receptive to change.
+140941274 : yea
+140941274 : [u'yea']
+140941274 : Pardon me?
+140941274 : remrse
+140941274 : [u'remorse']
+140941274 : What do you really want to ask me?
+140941274 : butter chiy
+140941274 : [u'butter chin']
+140941274 : That remark was too complicated for me. We were talking about remrse.
+140941274 : butter chiy
+140941274 : [u'butter chin']
+140941274 : Are you a man or woman?
+[chat_id:140941274]
 phraseExtracted:[u'manchurian']
-command:I want to order a Manchurian
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
-phraseExtracted:[u'manchurian', u'fried rice']
-command:I want to order a manchurian and some fried rice
-cust_location:Chandrabhaga Nagar Rd, Shankar Maharaj Vasahat, Sahakar Nagar, Katraj, Pune, Maharashtra, 411046, India
-loc_area:katraj
-cust_phone:9673637284
+command:ill have manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'butter chicken']
+command:butter chicken
 --------------------------

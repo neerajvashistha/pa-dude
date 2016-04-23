@@ -1,4 +1,9 @@
 #stop word list from SMART (Salton,1971).  Available at ftp://ftp.cs.cornell.edu/pub/smart/english.stop
+reserve
+yeah
+bye
+fine
+don
 cool
 fire
 station
@@ -8,9 +13,14 @@ find
 places
 offering 
 good
+offer
+type
+ill
+cuisine
 place
 check
 date
+im
 party
 budget
 part
@@ -24,6 +34,7 @@ electricity
 bills
 open
 end
+ticket
 return
 brought
 shop
@@ -165,6 +176,7 @@ at
 available
 away
 awfully
+book
 b
 be
 became
@@ -264,14 +276,15 @@ f
 far
 few
 fifth
-first
 five
 followed
 following
+quickly
 follows
 for
 former
 formerly
+friend
 forth
 four
 from

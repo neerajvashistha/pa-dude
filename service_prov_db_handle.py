@@ -16,10 +16,12 @@ def main():
 	#alist1 = queryServName("food","chinese")
 	#phraseExtracted = someFunctoFetchValue("phraseExtracted")
 	#print phraseExtracted
-	#phraseExtracted = ['manchurian','rice']
-	#command="I want rice,manchurian"
-	#loc_area="katraj"
-	#print(queryCollection(phraseExtracted,command,loc_area))
+	phraseExtracted = ['manchurian']
+	command="Haa got you"
+	#print command
+	#phraseExtracted = phrase_extract.extract_phrase(command)
+	loc_area="katraj"
+	print(queryCollection(phraseExtracted,command,loc_area))
 	#intrmList = []
 	#intrmList = queryCollection(phraseExtracted,command,loc_area)
 	#strop = ""
@@ -220,14 +222,16 @@ def queryCollection(itemList,query,location):
 			if (boolItemExist is True):
 				if isinstance(servDecrp, basestring):
 					#print "\nhe",serv_prvd_list1,indexForMenuprice
+					servItem,servDecrp=servItem.replace('`@`',''),servDecrp.replace('`@`','')
+					print servItem,servDecrp
 					serv_prvd_list1 += queryServName(servItem,servDecrp)#change func queryServName
 					#serv_prvd_list1=[]
-					#print serv_prvd_list
+					#print serv_prvd_list1
 					index_dict[servDecrp].append(indexForMenuprice)
 
 				elif isinstance(servDecrp, list):
 					serv_prvd_list = servDecrp
-			
+					return serv_prvd_list
 		#print serv_prvd_list1
 		#print [index_dict]
 		serv_prvd_list = queryServNameLocation(serv_prvd_list1,location,index_dict)
@@ -249,8 +253,11 @@ def dropCollection(col_name):
 
 client = MongoClient("mongodb://127.0.0.1:27027")
 db = client.test
-
-load_JSON_into_Collection("services.json","service_type")
+def start_conn(onbit):
+	if onbit==1:
+		load_JSON_into_Collection("services.json","service_type")
+	elif onbit==0:
+		dropCollection("services")
 
 if __name__ == "__main__":
 	client = MongoClient("mongodb://127.0.0.1:27027")

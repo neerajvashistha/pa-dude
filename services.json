@@ -1,12 +1,12 @@
 { "service_type":
   [
-    { "food":
+    { "cuisines":
       [
         { "type":"chinese","serv_prvd":
           [
-            { "serv_type":"chinese","serv_name":"Rolls Delight","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90,9999,9999,9999]},
-            { "serv_type":"chinese","serv_name":"Chinese Corner","serv_loc":"katraj","phone":7066185125,"menuprice":[50,40,115,110,9999,90,45,75,70,90,100,40,9999]},
-            { "serv_type":"chinese","serv_name":"China point","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,95,140,130,50,80,65,95,9999,40,9999]}
+            { "serv_type":"chinese","serv_name":"Rolls Delight","serv_loc":"katraj","phone":7066185125,"menuprice":[40,50,110,100,150,100,40,70,75,90,9998,9998,9998]},
+            { "serv_type":"chinese","serv_name":"Chinese Corner","serv_loc":"katraj","phone":7066185125,"menuprice":[50,40,115,110,9998,90,45,75,70,90,100,40,9998]},
+            { "serv_type":"chinese","serv_name":"China point","serv_loc":"khadi machine","phone":7066185125,"menuprice":[40,50,110,95,140,130,50,80,65,95,9998,40,9998]}
           ]          
         },
         { "type":"maharashtrian","serv_prvd":
@@ -27,27 +27,73 @@
       [
         { "type":"kitchen","serv_prvd":
           [
-            { "serv_type":"kitchen","serv_name":"Om Sai Services","serv_loc":"katraj","phone":7066185125},
-            { "serv_type":"kitchen","serv_name":"Namo Surya Services","serv_loc":"katraj","phone":7066185125},
-            { "serv_type":"kitchen","serv_name":"Bakare Services","serv_loc":"khadi machine","phone":7066185125}
+            { "serv_type":"kitchen","serv_name":"Om Sai Services","serv_loc":"katraj","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"kitchen","serv_name":"Namo Surya Services","serv_loc":"katraj","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"kitchen","serv_name":"Bakare Services","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998]}
           ]
         },
         { "type":"household_electrical","serv_prvd":
           [
-            { "serv_type":"household_electrical","serv_name":"Vaibhav Laxmi Electrical","serv_loc":"katraj","phone":7066185125},
-            { "serv_name":"household_electrical","serv_loc":"khadi machine","phone":7066185125}
+            { "serv_type":"household_electrical","serv_name":"Vaibhav Laxmi Electrical","serv_loc":"katraj","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_name":"household_electrical","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998]}
           ]
         },
         { "type":"household_water","serv_prvd":
           [
-            { "serv_type":"household_water","serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":7066185125},
-            { "serv_type":"household_water","serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":7066185125}
+            { "serv_type":"household_water","serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998]},
+            { "serv_type":"household_water","serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":7066185125,"menuprice":[9998,9998,9998,9998]}
           ]
         },
         { "type":"computer","serv_prvd":
           [
-            { "serv_type":"computer","serv_name":"Aarya Water Purifier Services","serv_loc":"khadi machine","phone":7066185125},
-            { "serv_type":"computer","serv_name":"Swami Pluming & Waterproofing Solution","serv_loc":"prabhat road","phone":7066185125}
+            { "serv_type":"computer","serv_name":"Fast forward Services","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"computer","serv_name":"Geo World Services and Solution","serv_loc":"prabhat road","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998]}
+          ]
+        }
+      ]
+    },
+    {"medical":
+      [
+        {"type":"accident","serv_prvd":
+          [
+            { "serv_type":"accident","serv_name":"INAMDAR MULTISPECIALITY HOSPITAL","serv_loc":"katraj","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"accident","serv_name":"Lifeline Hospital","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998,9998,9998]}
+          ]
+        }
+      ]
+    },
+    {"vehicle_repair":
+      [
+        {
+          "type":"MCWG","serv_prvd":
+          [
+            { "serv_type":"MCWG","serv_name":"Sahara Motors","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"MCWG","serv_name":"High Speed Services","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998,9998,9998]}
+          ]
+        },
+        {
+          "type":"LMV","serv_prvd":
+          [
+            { "serv_type":"LMV","serv_name":"High Speed Services","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998]},
+            { "serv_type":"LMV","serv_name":"Sahara Motors","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998,9998,9998]}
+          ]
+        }
+      ]
+    },
+    {"booking":
+      [
+        {
+          "type":"car","serv_prvd":
+          [
+            { "serv_type":"car","serv_name":"A R Tours And Travels","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998]},
+            { "serv_type":"car","serv_name":"Nextourism","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998]}
+          ]
+        },
+        {
+          "type":"bus","serv_prvd":
+          [
+            { "serv_type":"bus","serv_name":"A R Tours And Travels","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998]},
+            { "serv_type":"bus","serv_name":"Nextourism","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998]}
           ]
         }
       ]
