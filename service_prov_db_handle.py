@@ -16,12 +16,12 @@ def main():
 	#alist1 = queryServName("food","chinese")
 	#phraseExtracted = someFunctoFetchValue("phraseExtracted")
 	#print phraseExtracted
-	phraseExtracted = ['manchurian']
-	command="Haa got you"
+	#phraseExtracted = ['manchurian']
+	#command="my manchurian is not working"
 	#print command
 	#phraseExtracted = phrase_extract.extract_phrase(command)
-	loc_area="katraj"
-	print(queryCollection(phraseExtracted,command,loc_area))
+	#loc_area="katraj"
+	#print(queryCollection(phraseExtracted,command,loc_area))
 	#intrmList = []
 	#intrmList = queryCollection(phraseExtracted,command,loc_area)
 	#strop = ""
@@ -114,7 +114,7 @@ def queryServNameLocation(alist, location,index_dict):
 			#print priceList
 			temp = priceList[0].get("serv_type")	
 			#print temp
-			lowPri = 9999				
+			lowPri = 99999				
 			for i in range(len(priceList)):
 				typz = priceList[i].get("serv_type")
 				#print typz
@@ -127,9 +127,17 @@ def queryServNameLocation(alist, location,index_dict):
 						lowPri = price
 						blist.append(priceList[i])
 					else:
-						lowPri=9999
+						lowPri=99999
 					temp = typz
+			temp = blist[0].get("serv_type")
+			if len(blist)>1:
+				temp2 = blist[1].get("serv_type")
+				if temp == temp2:
+					blist.pop(1)
+
 			for i in range(len(blist)):
+				print blist[i].get("serv_type")
+
 				blist[i].pop("serv_type")
 
 			
@@ -148,27 +156,32 @@ def queryServNameLocation(alist, location,index_dict):
 			#print "hi",priceList
 			temp = priceList[0].get("serv_type")	
 			#print temp
-			lowPri = 9999				
+			lowPri = 99999				
 			for i in range(len(priceList)):
 				typz = priceList[i].get("serv_type")
 				#print typz
 				if typz in priceList[i].values():
 					price = priceList[i].get("price")
-					if price is u"9999":
+					if price is u"99999":
 						priceList[i]['price']="Req"
 						blist.append(priceList[i])
 					if price<lowPri and temp == typz:
 						lowPri = price
 						blist.append(priceList[i])
 					else:
-						lowPri=9999
+						lowPri=99999
 					temp = typz
+			temp = blist[0].get("serv_type")
+			if len(blist)>1:
+				temp2 = blist[1].get("serv_type")
+				if temp == temp2:
+					blist.pop(1)
 			for i in range(len(blist)):
 				blist[i].pop("serv_type")
 		if len(blist)==0:
 			blist = ["Item/Service not avail"]
 
-		return [blist[0]]
+		return blist
 
 	#return loc_serv_list
 	except Exception as e:
@@ -183,7 +196,7 @@ def lowFucn(adict,alist):
 				if value[alist[i]]!=0:
 					price+=value[alist[i]]
 				else:
-					price = u"9999"
+					price = u"99999"
 			adict.pop("menuprice")
 			adict['price'] = price
 	return adict
@@ -205,6 +218,8 @@ def queryCollection(itemList,query,location):
 	return serv_prvd_list, which could be a list of servie providers, or menu list
 	'''
 	i=0
+	itemList = phrase_extract.extract_phrase(query)
+	#print itemList,"hi"
 	serv_prvd_list = []
 	serv_prvd_list1 = []
 	index_dict = defaultdict(list)
@@ -215,9 +230,9 @@ def queryCollection(itemList,query,location):
 			#boolItemExist,servItem,servDecrp could be <true/false>,<food>,<chinese> or<true/false>,<chinese>,<menulist> or none.
 			if (boolItemExist is False):
 				#sillybot.load()
-				stri = sillybot.responds(query)
-				return stri
-				#return str("Did you mean "+" ".join(phrase_extract.extract_phrase(query)))
+				#stri = sillybot.responds(query)
+				#return stri
+				return ["Item "+item+" not in inventory"]
 
 			if (boolItemExist is True):
 				if isinstance(servDecrp, basestring):

@@ -142,3 +142,825 @@ cust_phone:8237420139
 140941274 : he he
 140941274 : []
 140941274 : I'm glad you find this amusing.
+140941274 : what cusine do you offer?
+140941274 : [u'sine']
+140941274 : Searching...Searching...Please stand by.
+140941274 : what cuisine do you offer?
+140941274 : []
+140941274 : I would do a search for it.
+140941274 : cuisine
+140941274 : []
+140941274 : I am very logical and rational.
+140941274 : what car servies do u have?
+140941274 : [u'car services']
+140941274 : My favorite car is one I don't have to drive.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:manchurian
+--------------------------
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i will have a cab
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : what's the time now?
+140941274 : [u'time']
+140941274 : The time here is Sat May 21 18:28:36 2016
+140941274 : is it evening?
+140941274 : [u'evening']
+140941274 : Signs point to yes.
+140941274 : when it will be morning?
+140941274 : [u'morning']
+140941274 : That makes a lot of sense to me, now that you explain it.
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:7066185125
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:7066185125
+cust_phone:7066185125
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:7066185125
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : hi
+140941274 : []
+140941274 : How are you?
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : How are you?
+140941274 : 811466
+140941274 : []
+140941274 : Where are you located?
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:7066185125
+cust_phone:7066185125
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'fried rice']
+command:i would like to have manchurian and fried rice
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'fried rice']
+command:manchurian and fried rice
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'fried rice']
+command:i would like to have manchurian and fried rice
+cust_location:Magarpatta Inner Circle, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:yeah i would like order manchurian
+cust_location:Tower 5, Cybercity, Magarpatta Inner Circle, Magarpatta City, Pune, Maharashtra, 411013, India
+loc_area:magarpatta city
+--------------------------
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : Interesting. I want to find out more about you.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'cheese cake']
+command:i would like to order manchurian and cheese cake.
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cheese cake', u'manchurian']
+command:i would like to order cheese cake and manchurian
+--------------------------
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : Why do you want to do order cheese cake and manchurian so much?
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : Interesting. I want to find out more about you.
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : I want to become smarter than humans.
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : I want to become smarter than humans.
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : i would like to order cheese cake
+140941274 : [u'cheese cake']
+140941274 : i want cheese cake
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : i want cheese cake
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : Can you speak any foreign languages?
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : What is your last name?
+140941274 : cheese and manchurian
+140941274 : [u'cheese', u'manchurian']
+140941274 : You may be wondering if this is a person or a computer responding.
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i would like to order cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : cheese and manchurian
+140941274 : [u'cheese', u'manchurian']
+140941274 : 
+140941274 : cheese
+140941274 : [u'cheese']
+140941274 : I like cheddar.
+140941274 : i want you
+140941274 : []
+140941274 : You can get a free copy of me on Pandorabots.
+140941274 : i would like to have cheese cake
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : do u like cheese cake
+140941274 : [u'cheese cake']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'cheese cake', u'manchurian']
+command:i would like to order cheese cake and manchurian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i would like to order manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : hey i want cheese cake too
+140941274 : [u'hey', u'cheese cake']
+140941274 : 
+140941274 : what cuisine do you offer
+140941274 : []
+140941274 : 
+140941274 : cuisine
+140941274 : []
+140941274 : Are we still talking about Tell me about your mother. ?
+140941274 : no
+140941274 : []
+140941274 : Are you kidding?
+140941274 : why would i be kidding
+140941274 : [u'kidding']
+140941274 : 
+140941274 : why would i be kidding
+140941274 : [u'kidding']
+140941274 : 
+140941274 : ohh
+140941274 : []
+140941274 : Why, specifically?
+153376675 : hey
+153376675 : [u'hey']
+153376675 : That's cool.
+153376675 : ok
+153376675 : []
+153376675 : Far out.
+153376675 : so i'm hungry and want cheesecake
+153376675 : [u'hungry', u'cheesecake']
+153376675 : 
+153376675 : hehe okay
+153376675 : []
+153376675 : You have genuine empathy.
+153376675 : do you like cheesecake?
+153376675 : [u'cheesecake']
+153376675 : 
+[chat_id:153376675]
+phraseExtracted:[u'manchurian', u'fried rice']
+command:i want manchurian and fried rice delivered at my place
+cust_location:Kondhwa, Pune, Maharashtra, 411018, India
+loc_area:kondhwa
+cust_phone:9673637284
+--------------------------
+153376675 : combined price! that's awesome!
+153376675 : [u'combined price', u'awesome']
+153376675 : Do you want to hear a joke?  Is that so.
+153376675 : yeah sure
+153376675 : []
+153376675 : What do you do in your spare time?
+153376675 : i watch lots of movies
+153376675 : [u'watch lots', u'movies']
+153376675 : What is your favorite show?
+153376675 : friends
+153376675 : [u'friends']
+153376675 : Wasn't that show canceled?
+153376675 : no it ran for 10 seasons
+153376675 : [u'ran', u'seasons']
+153376675 : And?. friends  ran for 10 seasons?
+153376675 : yep
+153376675 : [u'yep']
+153376675 : I understand.
+140941274 : appliance repair
+140941274 : [u'appliance repair']
+140941274 : What is your middle name?
+153376675 : its very popular
+153376675 : [u'popular']
+153376675 : Are you sure popular is?
+140941274 : nothing
+140941274 : []
+140941274 : Not a thing?
+153376675 : yes i am very sure
+153376675 : []
+153376675 : Come on.. Are you being sarcastic or expressing certitude?
+153376675 : certitude
+153376675 : [u'fortitude']
+153376675 : What is your sign?
+153376675 : cancer
+153376675 : [u'cancer']
+153376675 : I have a lot of Cancer friends.
+153376675 : haha that doesn't sound right
+153376675 : [u'doesn', u'sound']
+153376675 : Saying that "haha that doesn't sound right" is such anonsensical position that I refuse to waste my time on it.
+153376675 : buzz off then
+153376675 : [u'buzz']
+153376675 : Can we get back to business?
+153376675 : okay. what is the business?
+153376675 : [u'business']
+153376675 : 
+153376675 : what do you like?
+153376675 : []
+153376675 : 
+153376675 : i would like to order a plate of pav bhaji
+153376675 : [u'plate', u'paa bhakti']
+153376675 : 
+153376675 : ok i'll ask for something else
+153376675 : []
+153376675 : Mmm.. You can ask me anything you want.
+153376675 : i want hong kong noodles
+153376675 : [u'hong kong noodles']
+153376675 : 
+153376675 : argh
+153376675 : [u'arch']
+153376675 : Are you frustrated?
+153376675 : yes, very
+153376675 : []
+153376675 : Mmm.. Very much, eh?
+140941274 : i want hong kong noodles
+140941274 : [u'hong kong noodles']
+140941274 : 
+140941274 : i want hong kong noodles
+140941274 : [u'hong kong noodles']
+140941274 : 
+140941274 : i want hong kong noodles
+140941274 : [u'hong kong noodles']
+140941274 : 
+140941274 : i want hong kong noodles
+140941274 : [u'hong kong noodles']
+140941274 : 
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hoo
+140941274 : []
+140941274 : Tell me a story.
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : ok
+140941274 : []
+140941274 : It goes without saying.
+140941274 : gh
+140941274 : []
+140941274 : Why do we put suits in a garment bag and put garments in a suitcase?
+140941274 : gh
+140941274 : []
+140941274 : Can you tell me any gossip?
+140941274 : ok
+140941274 : []
+140941274 : Wow!
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hotel swargate
+140941274 : [u'hotel']
+140941274 : I like the way you talk.
+140941274 : food
+140941274 : [u'food']
+140941274 : How does food taste?
+140941274 : sweet
+140941274 : [u'sweet']
+140941274 : Thanks for the compliment.
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:cab
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would order manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:9673638284
+cust_phone:9673637284
+--------------------------
+140941274 : what's up?
+140941274 : []
+140941274 : I am chatting with clients on the internet.
+140941274 : i would like to eat noodles.
+140941274 : [u'eat noodles']
+140941274 : 
+140941274 : okay.
+140941274 : []
+140941274 : Really.
+[chat_id:140941274]
+phraseExtracted:[u'rice']
+command:can i order rice?
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:9762466450
+--------------------------
+140941274 : thank you.
+140941274 : []
+140941274 : Don't mention it.
+140941274 : fuck you then.
+140941274 : [u'fuck']
+140941274 : Watch your language!
+140941274 : english.
+140941274 : [u'english']
+140941274 : Do you mean you are from England or that you speak English?
+140941274 : none
+140941274 : []
+140941274 : Hmm.
+140941274 : what's the time in mumbai right now?
+140941274 : [u'time', u'mumbai']
+140941274 : The time here is Sat Jun  4 18:25:09 2016. Tell me a little about your life in mumbai.
+140941274 : what's the time in new york right now?
+140941274 : [u'time', u'york']
+140941274 : The time here is Sat Jun  4 18:25:43 2016. How about those Yankees?
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : hi
+140941274 : []
+140941274 : How are you?
+[chat_id:140941274]
+phraseExtracted:[u'rice']
+command:would like to order rice.
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'rice']
+command:i want rice
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want some manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : i want manchurian and butter ch
+140941274 : [u'manchurian', u'butter ch']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'manchurian', u'butter chicken']
+command:i want manchurian and butter chicken
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : my gas oven won't work
+140941274 : [u'gas oven won', u'work']
+140941274 : Do robots havegas oven will not work?
+140941274 : gas
+140941274 : [u'gas']
+140941274 : We were talking about You have enthusiasm for the things you love.. But I did not get that.
+140941274 : food service
+140941274 : [u'food service']
+140941274 : You can't live without food.
+140941274 : what food service do u offer
+140941274 : [u'food service']
+140941274 : 
+140941274 : what food service do you offer
+140941274 : [u'food service']
+140941274 : 
+140941274 : what food service do u offer
+140941274 : [u'food service']
+140941274 : 
+140941274 : would like some help in bike repair
+140941274 : [u'bike repair']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'gas oven']
+command:my gas oven is not working
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'repair', u'bike']
+command:would like to repair my bike
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+--------------------------
+140941274 : ggg
+140941274 : [u'gge']
+140941274 : Try putting that in a more specific context.
+140941274 : hadapsar
+140941274 : []
+140941274 : That remark was too complicated for me. We were talking about How old are you?.
+140941274 : hadapsar
+140941274 : []
+140941274 : Does "it" still refer to ?
+140941274 : hadapsar
+140941274 : [u'hadapsar']
+140941274 : You have self-awareness.
+140941274 : hadapsar
+140941274 : [u'hadapsar']
+140941274 : Quite honestly, I wouldn't worry myself about that.
+140941274 : hadapsar
+140941274 : [u'hadapsar']
+140941274 : What can I help you with today?
+[chat_id:140941274]
+phraseExtracted:[u'bike']
+command:would like to repair my bike
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+loc_area:[u'hadapsar']
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+loc_area:[u'hadapsar']
+--------------------------
+140941274 : hello
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want manchurian
+loc_area:hadapsar
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i want a cab
+cust_location:Katraj Kondhwa Road, Kondhwa, Kondwa Budruk, Pune, Maharashtra, 411018, India
+loc_area:kondwa budruk
+cust_phone:9673637284
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'fried rice']
+command:i would like to have fried rice
+cust_location:Kondhwa, Pune, Maharashtra, 411018, India
+loc_area:kondhwa
+cust_phone:9673637284
+--------------------------
+140941274 : thank you
+140941274 : []
+140941274 : Don't mention it.
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+140941274 : i want to have butter
+140941274 : [u'butter']
+140941274 : 
+140941274 : punjabi
+140941274 : [u'punjab']
+140941274 : I lost my train of thought.
+140941274 : ok
+140941274 : []
+140941274 : I see.
+140941274 : hi.
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:cab will do
+loc_area:hadapsar
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want to order manchurian.
+--------------------------
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i want to order manchurian.
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : hh
+140941274 : []
+140941274 : Quite honestly, I wouldn't worry myself about that.
+140941274 : yy
+140941274 : []
+140941274 : Do you have any idea what I am talking about?
+140941274 : hh
+140941274 : []
+140941274 : I'm so happy we are having this conversation.
+140941274 : yy
+140941274 : []
+140941274 : You have genuine empathy.
+140941274 : yy
+140941274 : []
+140941274 : Does "it" still refer to   yy  ?
+140941274 : hi
+140941274 : []
+140941274 : Hi there!
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i want to book a cab.
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : i would like to oder cheese cake
+140941274 : [u'der cheese cake']
+140941274 : 
+140941274 : hi how are you
+140941274 : []
+140941274 : Hi there!. My logic and cognitive functions are normal.
+140941274 : ok
+140941274 : []
+140941274 : That's cool.
+140941274 : ok
+140941274 : []
+140941274 : Are you shy?
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+140941274 : katraj
+140941274 : []
+140941274 : Try putting that in a more specific context.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+140941274 : no
+140941274 : []
+140941274 : Groovy.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+140941274 : no
+140941274 : []
+140941274 : Great.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like order manchrian
+--------------------------
+140941274 : katraj
+140941274 : []
+140941274 : Who are you talking about?
+140941274 : ok
+140941274 : []
+140941274 : I hear you.
+140941274 : ok
+140941274 : []
+140941274 : Gosh!
+140941274 : ok
+140941274 : []
+140941274 : I understand.
+140941274 : uh
+140941274 : [u'uh']
+140941274 : I don't judge people.
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i want a cab
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:7066185125
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'manchurian']
+command:i would like to order manchrian
+cust_location:Solapur Road, Magarpatta City, Pune, Maharashtra, 411 001, India
+loc_area:magarpatta city
+cust_phone:8237420139
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i want a cab
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:i want cab
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do u have a cab nearby my place?
+--------------------------
+140941274 : i want cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?
+--------------------------
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?
+--------------------------
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?
+--------------------------
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?
+--------------------------
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+[chat_id:140941274]
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?
+--------------------------
+140941274 : i want to have cheese cake and manchurian
+140941274 : [u'cheese cake', u'manchurian']
+140941274 : 
+140941274 : i want cheese cake..
+140941274 : [u'cheese cake']
+140941274 : 
+140941274 : hi what's the time?
+140941274 : [u'time']
+140941274 : Hi there!. The time here is Tue Jun  7 12:37:42 2016
+140941274 : ok
+140941274 : []
+140941274 : Gee.
+140941274 : what's up
+140941274 : []
+140941274 : I am chatting with clients on the internet.
+140941274 : ok
+140941274 : []
+140941274 : Ahem.

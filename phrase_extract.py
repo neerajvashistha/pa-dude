@@ -9,6 +9,16 @@ import spellcheck
 
 
 def extract_phrase(sentence):
+	"""for the purpose of phrase extraction this function is employed
+
+    :param name: sentence
+    :type name: str. 
+    :param state: free from slangs and spell errors
+    :type state: str 
+    :returns: list -- extracted phrases. 
+    :raises: AttributeError, KeyError
+
+    """ 
 	# 1. initialize RAKE by providing a path to a stopwords file
 	stoppath = "SmartStoplist_mod.txt"
 	rake_object = rake.Rake(stoppath)
@@ -21,4 +31,5 @@ def extract_phrase(sentence):
 	phraseList = rake.generate_candidate_keywords(sentenceList, stopwordpattern)
 	return phraseList
 
-#print(extract_phrase(sys.argv[1]))
+if __name__ == "__main__":
+    print(extract_phrase("I would like to order mnchurien and rice. Send me a mechnic"))

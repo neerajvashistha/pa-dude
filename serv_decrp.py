@@ -48,8 +48,8 @@ services = {
       		{
       			"kitchen`@`":
 		        [
-		      		"gas oven won't heat`@`",
-		      		"electric oven won't heat`@`", 
+		      		"gas oven`@`",
+		      		"electric oven`@`", 
 		      		"dish washer`@`",
 		      		"refrigerator`@`",
 		      		"mixer grinder`@`",
@@ -165,4 +165,4 @@ def match_serv_menu(itemName):
 				return (True,service_descp_key,[q for x,y in z.items() for q,w in y.items() if x==itemName2.lower()],0)
 	else:
 		return (False,some_list,some_list,index)
-#print(match_serv_menu("chowmein"))
+#print(match_serv_menu("uchowmein"))

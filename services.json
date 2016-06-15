@@ -85,8 +85,8 @@
         {
           "type":"car","serv_prvd":
           [
-            { "serv_type":"car","serv_name":"A R Tours And Travels","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998]},
-            { "serv_type":"car","serv_name":"Nextourism","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998]}
+            { "serv_type":"car","serv_name":"A R Tours And Travels","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998]},
+            { "serv_type":"car","serv_name":"Nextourism","serv_loc":"khadi machine","phone":7066185125,"menuprice":[9998,9998,9998,9998,9998]}
           ]
         },
         {

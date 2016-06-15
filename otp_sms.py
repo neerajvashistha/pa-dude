@@ -58,6 +58,6 @@ def get_otp(Ph_number,chat_id):
     my_secret = base64.b32encode(str(chat_id))
     #my_secret = 'MFRGGZDFMZTWQ2LK'
     my_token = otp.get_totp(my_secret,interval_length = 300)
-    msg = my_token
+    msg = "Your One-Time-Password is "+str(my_token)+". It will be valid for 3 minutes."
     phn_no = Ph_number
     sendsmses(phn_no,str(msg))

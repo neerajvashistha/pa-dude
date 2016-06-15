@@ -69,9 +69,9 @@ kernel.setBotPredicate("personality","I am your personal assistant chatting budd
 
 def responds(msg,id=12345):
     sessionId = int(id)
-    if os.path.isfile("jarvis.brn"):
+    if os.path.isfile("dude.brn"):
         kernel.verbose(False)
-        kernel.bootstrap(brainFile = "jarvis.brn")
+        kernel.bootstrap(brainFile = "dude.brn")
     bot_response=kernel.respond(msg, sessionId)
     return bot_response
 
@@ -80,11 +80,11 @@ def responds(msg,id=12345):
 
 if __name__ == "__main__":
     kernel.verbose(False)
-    if os.path.isfile("jarvis.brn"):
-        kernel.bootstrap(brainFile = "jarvis.brn")
+    if os.path.isfile("dude.brn"):
+        kernel.bootstrap(brainFile = "dude.brn")
     else:
         kernel.bootstrap(learnFiles = "std_startup.xml", commands = "load aiml b")
-        kernel.saveBrain("jarvis.brn")
+        kernel.saveBrain("dude.brn")
     bot_name = kernel.getBotPredicate("name")
     print bot_name
     sessionId = 12345
@@ -96,7 +96,7 @@ if __name__ == "__main__":
             print sessionData
             exit()
         elif message == "save":
-            kernel.saveBrain("jarvis.brn")
+            kernel.saveBrain("dude.brn")
         else:
             bot_response=kernel.respond(message, sessionId)
             # Do something with bot_response

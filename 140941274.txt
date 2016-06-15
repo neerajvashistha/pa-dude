@@ -1,2 +1,2 @@
-phraseExtracted:[u'manchurian']
-command:manchurian
+phraseExtracted:[u'cab']
+command:do you have a cab around my place?

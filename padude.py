@@ -4,7 +4,8 @@ import telepot, time, sys, os, re
 from geopy.geocoders import Nominatim
 import otp_sms
 from goto import with_goto
-import serv_decrp,search
+import serv_decrp,search, subprocess
+from easyprocess import EasyProcess
 
 is_chatting = False
 location_area=False
@@ -19,36 +20,80 @@ def handle(msg):
     if content_type is 'text':
         global is_chatting
         number=""
+        res=""
         global location_area
         chat_id = msg['chat']['id']
         command = msg['text']
         print 'Got command: %s' % command
         is_chatting = True
         location_area=False
-        if command.startswith('/h') or command.startswith('/help') or command.startswith('who are'):
-            bot.sendMessage(chat_id, "I'm a smart ")
+        if command.startswith('who are you') or command.startswith('/start') or command.startswith('/help'):
+            bot.sendMessage(chat_id, "How this works: \n1.We process your text and check for the service. \n2. We prompt you for your phone no. and location(google map). \n3.We confirm and deliver the service via OTP.... And its Done! ")
+        if command.startswith('/human'):
+            if not command[7:]:
+                bot.sendMessage(chat_id,"Give me an input for example: /human Are you human?")
+            else:
+                s = EasyProcess("zenity --entry --text=' Revert Response for: "+command[7:]+"'").call(timeout=7).stdout
+                #inputText = subprocess.check_output("zenity --entry --text=' Revert Response for: "+command[7:]+"' || exit 0",shell=True,timeout=None)
+                if not s:
+                    bot.sendMessage(chat_id,"Admin not Available")
+                else:
+                    bot.sendMessage(chat_id,s)
         if not command.startswith('/') and is_chatting:
             command = command.lower()
             phraseExtracted = phe.extract_phrase(command)
+            for i in range(len(phraseExtracted)):
+                print phraseExtracted[i]
+                if 'food' in phraseExtracted[i].split(" "):
+                    phraseExtracted=['cuisines']
+                if 'vehicle' in phraseExtracted[i].split(" "):
+                    phraseExtracted-['vehicle_repair']
+                if phraseExtracted[i] in open('location.txt').read():
+                    loc_area = phraseExtracted[i]
+                    someFunctoStoreValue(loc_area,"loc_area",chat_id)
+                    location_area = True
+                    goto .loction_acc
+            prevTestValue,bit=[],False
             if phraseExtracted:
                 print phraseExtracted
-                testValue,some_list,some_list,index = serv_decrp.match_serv_menu(phraseExtracted[0].encode('ascii','ignore'))
+                for i in range(len(phraseExtracted)):
+                    testValue,some_list,some_list,index = serv_decrp.match_serv_menu(phraseExtracted[i].encode('ascii','ignore'))
+                    prevTestValue.append(testValue)
                 print testValue,some_list,some_list,index
+                if True in prevTestValue:
+                    if False in prevTestValue:
+                        responseStr="we tried to interpret your request, you meant "+phraseExtracted[prevTestValue.index(True)]+"? but could'nt acknowledge this  "+phraseExtracted[prevTestValue.index(False)]+" try requesting without "+ phraseExtracted[prevTestValue.index(False)]
+                        bot.sendMessage(chat_id,responseStr)
+                        testValue,bit=False,True
             else:
                 testValue = False
             if len(phraseExtracted)==0 or testValue is False:
                 xs = command.strip()
+
                 if xs.isdigit() and len(str(xs))==10:
                     number = str(xs)
                     goto .checkno
                 else:
                     xs = command
-                    print "AIML resp>"
-                    res = sillybot.respond(command,chat_id)
-                    if not res:
-                        print "WEB Resp>"
-                        res = "Exploring web\n"+search.do_a_search(command)
-                    bot.sendMessage(chat_id,res)
+                    listedcommand=command.split(" ")
+                    count=1
+                    possibleValidReq = "i would send me some like to order would like to have want send me what is the score do you "
+                    for word in range(len(listedcommand)):
+                        if listedcommand[word] in possibleValidReq:
+                            count=count+1
+                    print bit
+                    if count>2 :
+                        if bit is False:
+                            print califResponse()
+                            bot.sendMessage(chat_id, califResponse())
+                            bit=True
+                    if bit is False:
+                        res = sillybot.respond(command,chat_id)
+                        print "AIML resp> "+str(res)
+                        if not res:
+                            res = "Exploring web\n"+search.do_a_search(command)
+                            print "WEB Resp> "+str(res)
+                        bot.sendMessage(chat_id,res)
                     dump(chat_id,command)
                     dump(chat_id,phraseExtracted)
                     dump(chat_id,res)
@@ -63,7 +108,7 @@ def handle(msg):
                 someFunctoStoreValue(phraseExtracted,"phraseExtracted",chat_id)
                 someFunctoStoreValue(command,"command",chat_id)
             if not location_area:
-                print(location_area)
+                print("Location is ",location_area)
                 bot.sendMessage(chat_id,"Provide us with your location")
                 label .loction_acc
                 phraseExtracted=someFunctoFetchValue("phraseExtracted",chat_id)
@@ -73,7 +118,7 @@ def handle(msg):
                 #print (db_handle.queryCollection(phraseExtracted,command,loc_area))
                 #if db_handle.queryCollection(phraseExtracted,command,loc_area)[0] == "Did you mean":
                 #bot.sendMessage(chat_id, db_handle.queryCollection(phraseExtracted,command,loc_area))
-                print db_handle.queryCollection(phraseExtracted,command,loc_area)
+                #print db_handle.queryCollection(phraseExtracted,command,loc_area)
                 if db_handle.queryCollection(phraseExtracted,command,loc_area)[0] == "Item/Service not avail":
                     dump(chat_id,"Sorry, Item/Service is not availiable")
                     bot.sendMessage(chat_id, "Sorry, Item/Service is not availiable")
@@ -94,9 +139,10 @@ def handle(msg):
                 #print Cust_phone
                 location = someFunctoFetchValue("cust_location",chat_id)
                 Cust_location = ",".join(location.split(",")[1:4])
-                print phraseExtracted,command,loc_area,Cust_phone
+                #print phraseExtracted,command,loc_area,Cust_phone
 
                 intrmList = db_handle.queryCollection(phraseExtracted,command,loc_area)
+                print intrmList
                 strop = ""
                 for i in range(len(intrmList)):
                     for k,v in intrmList[i].items():
@@ -127,7 +173,7 @@ def handle(msg):
             else:
                 print "isNOTValid OTP"
                 bot.sendMessage(chat_id, "Try again, send us your number again.")
-        elif command.startswith('/search') or command.startswith('/s'):
+        elif command.startswith('/search') or command.startswith('/s') and not command.startswith('/start'):
             print "searching web" 
             if command.startswith('/search'):
                 term_to_search = command[8:]
@@ -158,6 +204,27 @@ def handle(msg):
         someFunctoStoreValue(loc_area,"loc_area",chat_id)
         location_area = True
         goto .loction_acc
+        
+    elif content_type is 'audio':
+    	pass
+    elif content_type is 'document':
+    	pass
+    elif content_type is 'photo':
+    	pass
+    elif content_type is 'sticker':
+    	pass
+    elif content_type is 'video':
+    	pass
+    elif content_type is 'voice':
+    	pass
+    elif content_type is 'contact':
+    	pass
+    elif content_type is 'venue':
+    	pass
+    elif content_type is 'new_chat_member':
+    	pass
+    elif content_type is 'left_chat_member':
+    	pass
 
 def someFunctoStoreValue(somevalue,key,chat_id):
     valueToFile = str(key)+":"+str(somevalue)+"\n"
@@ -194,7 +261,23 @@ def dump(chat_id,text):
     f = open("dump.txt","a")
     f.write(str(chat_id)+" : "+str(text)+"\n")
     f.close()
+def califResponse():
+    response = ["Sorry, I didn't get that. Sometimes I don't get things.",
+                "I don't know the answer or have what you're looking for. Being an AI bot is hard :(",
+                "Being a bot and all you'd think I have the answer to all your questions. Sadly, that's not the case.",
+                "404 something wrong with me",
+                "I was not designed to answer that. Try asking something useful.",
+                "Either you phrased the question wrong or asked the wrong question. Moving on.",
+                "I did not get you, probably something short-circuited in here",
+                "What did you ask, did you asked me.. oh!! sorry query me something else."]
+    from random import randrange
+    random_index = randrange(0,len(response))
+    return response[random_index]
 
+def timeout( p ):
+    if p.poll() is None:
+        print 'Error: process taking too long to complete--terminating'
+        p.kill()
 import aiml
 sillybot = aiml.Kernel()
 sillybot.loadBrain('dude.brn')
@@ -212,8 +295,8 @@ for bot_predicate in bot_predicates:
 
 # Create a bot object with API key
 
-bot = telepot.Bot('168791394:AAG39PL1_5IUGmZnbUv6pAOqKBQqXtyKWzo')
-
+#bot = telepot.Bot('168791394:AAG39PL1_5IUGmZnbUv6pAOqKBQqXtyKWzo')
+bot = telepot.Bot('144088369:AAHCg6tFUOmio1uoGWM89qVG2MJVNv7rGtA')
 # Attach a function to notifyOnMessage call back
 bot.notifyOnMessage(handle)
 
