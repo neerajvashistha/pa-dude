@@ -1,4 +1,6 @@
 # dude
+More info can be obtained from the YouTube video
+https://m.youtube.com/watch?v=Sg_G6Nmt-mc
 ## Desired Features for the system
 1.  Data Filtering
 2.  Unique Connection, establishment/UID for Dudes
